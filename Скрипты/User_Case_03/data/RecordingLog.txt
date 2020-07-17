@@ -1,0 +1,196 @@
+[API Trapper      (22d0:303c)] Recording in 64-bit mode: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+[API Trapper      (22fc:187c)] Recording in 64-bit mode: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+[API Trapper      (20bc:2f0c)] Recording in 64-bit mode: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+[Network Analyzer (20bc: e10)] ------------------------------------------------------------------------------------------
+[Network Analyzer (20bc: e10)] Load Network Traffic Analyzers:
+[Network Analyzer (20bc: e10)]     Analyzer Module: WPLUS (value=)
+[Network Analyzer (20bc: e10)]     Analyzer Module: WebBase (value=GetHttpProtocolAnalyzer:api_http_filter_x64.dll)
+[Network Analyzer (20bc: e10)]     + Network Analyzer: api_http_filter_x64.dll @ GetHttpProtocolAnalyzer Loaded!
+[Network Analyzer (20bc: e10)]     + Interception Auditors: WinInetWplusInterceptionAudit:api_http_filter_x64.dll
+[Network Analyzer (20bc: e10)]     Analyzer Module: QTWeb (value=GetWebSocketProtocolAnalyzer:WebSocketAnalyzer_x64.dll)
+[Network Analyzer (20bc: e10)]     + Network Analyzer: WebSocketAnalyzer_x64.dll @ GetWebSocketProtocolAnalyzer Loaded!
+[Network Analyzer (20bc: e10)] ------------------------------------------------------------------------------------------
+[Network Analyzer (20bc:11bc)] Address lookup for DESKTOP-CO1IJNF = 192.168.1.12
+[Network Analyzer (20bc: e10)] Address lookup for DESKTOP-CO1IJNF = 192.168.1.12
+[Network Analyzer (20bc: e10)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid=  1)  PROXIED!
+[Network Analyzer (20bc: e10)] Address lookup for DESKTOP-CO1IJNF = 192.168.1.12
+[Web Request      (20bc:11bc)] "GET /WebTours"   
+[Network Analyzer (20bc:11bc)]   (Sid:  1) Client -> Server @ : 548 bytes (Service=HTTP)
+[Network Analyzer (20bc: e10)] Request Connection: Remote Server @ 173.194.73.84:443   (Service=)  (Sid=  2)  PROXIED!
+[Network Analyzer (20bc:11bc)]   (Sid:  1) Server -> Client : 506 bytes  (Service=HTTP)
+[Web Request      (20bc:11bc)] "GET /WebTours/"   
+[Network Analyzer (20bc:11bc)]   (Sid:  1) Client -> Server @ : 549 bytes (Service=HTTP)
+[Network Analyzer (20bc:11bc)]   (Sid:  1) Server -> Client : 664 bytes  (Service=HTTP)
+[Web Request      (20bc:11bc)] "GET /WebTours/header.html"   
+[Network Analyzer (20bc:11bc)]   (Sid:  1) Client -> Server @ : 586 bytes (Service=HTTP)
+[Network Analyzer (20bc: e10)] Address lookup for DESKTOP-CO1IJNF = 192.168.1.12
+[Network Analyzer (20bc:11bc)]   (Sid:  1) Server -> Client : 1008 bytes  (Service=HTTP)
+[Network Analyzer (20bc: e10)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid=  3)  PROXIED!
+[Web Request      (20bc:11bc)] "GET /WebTours/images/hp_logo.png"   
+[Network Analyzer (20bc:11bc)]   (Sid:  1) Client -> Server @ : 488 bytes (Service=HTTP)
+[Web Request      (20bc:11bc)] "GET /cgi-bin/welcome.pl?signOff=true"   
+[Network Analyzer (20bc: e10)] Address lookup for DESKTOP-CO1IJNF = 192.168.1.12
+[Network Analyzer (20bc:11bc)]   (Sid:  3) Client -> Server @ : 597 bytes (Service=HTTP)
+[Network Analyzer (20bc:11bc)]   (Sid:  1) Server -> Client : 899 bytes  (Service=HTTP)
+[Network Analyzer (20bc: e10)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid=  4)  PROXIED!
+[Network Analyzer (20bc:11bc)]   (Sid:  3) Server -> Client : 1021 bytes  (Service=HTTP)
+[Network Analyzer (20bc:11bc)]   (Sid:  3) Server -> Client : 5 bytes  (Service=HTTP)
+[Web Request      (20bc:11bc)] "GET /WebTours/images/webtours.png"   
+[Network Analyzer (20bc:11bc)]   (Sid:  4) Client -> Server @ : 489 bytes (Service=HTTP)
+[Network Analyzer (20bc:11bc)]   (Sid:  4) Server -> Client : 4488 bytes  (Service=HTTP)
+[Network Analyzer (20bc: e10)] Address lookup for DESKTOP-CO1IJNF = 192.168.1.12
+[Network Analyzer (20bc: e10)] Request Connection: Remote Server @ 173.194.73.95:443   (Service=)  (Sid=  5)  PROXIED!
+[Web Request      (20bc:11bc)] "GET /cgi-bin/nav.pl?in=home"   
+[Network Analyzer (20bc:11bc)]   (Sid:  4) Client -> Server @ : 638 bytes (Service=HTTP)
+[Web Request      (20bc:11bc)] "GET /WebTours/home.html"   
+[Network Analyzer (20bc:11bc)]   (Sid:  3) Client -> Server @ : 634 bytes (Service=HTTP)
+[Network Analyzer (20bc:11bc)]   (Sid:  3) Server -> Client : 1660 bytes  (Service=HTTP)
+[Network Analyzer (20bc:11bc)]   (Sid:  4) Server -> Client : 1753 bytes  (Service=HTTP)
+[Network Analyzer (20bc: e10)] Address lookup for DESKTOP-CO1IJNF = 192.168.1.12
+[Network Analyzer (20bc: e10)] Request Connection: Remote Server @ 64.233.165.95:443   (Service=)  (Sid=  6)  PROXIED!
+[Web Request      (20bc:11bc)] "GET /WebTours/images/mer_login.gif"   
+[Network Analyzer (20bc:11bc)]   (Sid:  4) Client -> Server @ : 520 bytes (Service=HTTP)
+[Network Analyzer (20bc:11bc)]   (Sid:  4) Server -> Client : 977 bytes  (Service=HTTP)
+[Network Analyzer (20bc: e10)] Address lookup for DESKTOP-CO1IJNF = 192.168.1.12
+[Network Analyzer (20bc:1a58)]   (Sid:  2) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES128-SHA)
+[Network Analyzer (20bc: e10)] Request Connection: Remote Server @ 64.233.164.95:443   (Service=)  (Sid=  7)  PROXIED!
+[Web Request      (20bc:11bc)] "GET /favicon.ico"   
+[Network Analyzer (20bc:11bc)]   (Sid:  4) Client -> Server @ : 489 bytes (Service=HTTP)
+[Network Analyzer (20bc:11bc)]   (Sid:  4) Server -> Client : 424 bytes  (Service=HTTP)
+[Network Analyzer (20bc:1a58)]   (Sid:  2) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1.2, ciphers:ECDHE-RSA-AES128-GCM-SHA256)
+[Network Analyzer (20bc:3a9c)]   (Sid:  6) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES128-SHA)
+[Network Analyzer (20bc:3a9c)]   (Sid:  6) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1.2, ciphers:ECDHE-RSA-AES128-GCM-SHA256)
+[Network Analyzer (20bc:2810)]   (Sid:  5) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES128-SHA)
+[Network Analyzer (20bc:2810)]   (Sid:  5) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1.2, ciphers:ECDHE-RSA-AES128-GCM-SHA256)
+[Network Analyzer (20bc:2fa4)]   (Sid:  7) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES128-SHA)
+[Network Analyzer (20bc:2fa4)]   (Sid:  7) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1.2, ciphers:ECDHE-RSA-AES128-GCM-SHA256)
+[Network Analyzer (20bc: e10)] Address lookup for DESKTOP-CO1IJNF = 192.168.1.12
+[Web Request      (20bc:11bc)] "GET /v1/pages/Chc2LjEuMTcxNS4xNDQyL2VuIChHR0xMKRIfCTfZQeCPfjGJEgkN541ADhIAGgASCQ3OQUx6EgAaAA==?alt=proto"   
+[Network Analyzer (20bc:11bc)]   (Sid:  7) Client -> Server @ : 571 bytes (SSL)(Service=HTTP)
+[Network Analyzer (20bc: e10)] Request Connection: Remote Server @ 173.194.222.94:443   (Service=)  (Sid=  8)  PROXIED!
+[Network Analyzer (20bc:11bc)]   (Sid:  7) Server -> Client : 663 bytes (SSL) (Service=HTTP)
+[Network Analyzer (20bc:1e5c)]   (Sid:  8) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES128-SHA)
+[Network Analyzer (20bc:1e5c)]   (Sid:  8) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1.2, ciphers:ECDHE-RSA-AES128-GCM-SHA256)
+[Web Request      (20bc:11bc)] "GET /chrome-variations/seed?osname=win&channel=stable&milestone=84"   
+[Network Analyzer (20bc:11bc)]   (Sid:  8) Client -> Server @ : 448 bytes (SSL)(Service=HTTP)
+[Network Analyzer (20bc:11bc)]   (Sid:  8) Server -> Client : 377 bytes (SSL) (Service=HTTP)
+[Network Analyzer (20bc:11bc)]   (Sid:  1) Connection Terminated (by Server)
+[Network Analyzer (20bc:11bc)]   (Sid:  3) Connection Terminated (by Server)
+[Network Analyzer (20bc:11bc)]   (Sid:  4) Connection Terminated (by Server)
+[Network Analyzer (20bc: e10)] Address lookup for DESKTOP-CO1IJNF = 192.168.1.12
+[Network Analyzer (20bc: e10)] Request Connection: Remote Server @ 64.233.165.188:5228   (Service=)  (Sid=  9)  PROXIED!
+[API Trapper      (2b90:1178)] Recording in 64-bit mode: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+[User action                 ] StartTransactionEvent 1_Login [Network Analyzer (20bc: bec)]   (Sid:  9) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES128-SHA)
+[Network Analyzer (20bc: bec)]   (Sid:  9) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1.2, ciphers:ECDHE-RSA-AES128-GCM-SHA256)
+[Network Analyzer (20bc:11bc)]   (Sid:  9) Client -> Server @ : 191 bytes (SSL)
+[Network Analyzer (20bc:11bc)]   (Sid:  9) Server -> Client : 1 bytes (SSL)
+[Network Analyzer (20bc:11bc)]   (Sid:  9) Server -> Client : 65 bytes (SSL)
+[Network Analyzer (20bc:11bc)]   (Sid:  9) Server -> Client : 12 bytes (SSL)
+[Network Analyzer (20bc: e10)] Address lookup for DESKTOP-CO1IJNF = 192.168.1.12
+[Network Analyzer (20bc: e10)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid= 10)  PROXIED!
+[Web Request      (20bc:11bc)] "POST /cgi-bin/login.pl"   
+[Network Analyzer (20bc:11bc)]   (Sid: 10) Client -> Server @ : 889 bytes (Service=HTTP)
+[Network Analyzer (20bc:11bc)]   (Sid: 10) Server -> Client : 847 bytes  (Service=HTTP)
+[Network Analyzer (20bc:11bc)]   (Sid: 10) Server -> Client : 5 bytes  (Service=HTTP)
+[Web Request      (20bc:11bc)] "GET /cgi-bin/nav.pl?page=menu&in=home"   
+[Network Analyzer (20bc:11bc)]   (Sid: 10) Client -> Server @ : 743 bytes (Service=HTTP)
+[Network Analyzer (20bc: e10)] Address lookup for DESKTOP-CO1IJNF = 192.168.1.12
+[Network Analyzer (20bc: e10)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid= 11)  PROXIED!
+[Network Analyzer (20bc:11bc)]   (Sid: 10) Server -> Client : 1744 bytes  (Service=HTTP)
+[Network Analyzer (20bc:11bc)]   (Sid: 10) Server -> Client : 5 bytes  (Service=HTTP)
+[Web Request      (20bc:11bc)] "GET /cgi-bin/login.pl?intro=true"   
+[Network Analyzer (20bc:11bc)]   (Sid: 11) Client -> Server @ : 738 bytes (Service=HTTP)
+[Web Request      (20bc:11bc)] "GET /WebTours/images/flights.gif"   
+[Network Analyzer (20bc:11bc)]   (Sid: 10) Client -> Server @ : 638 bytes (Service=HTTP)
+[Network Analyzer (20bc: e10)] Address lookup for DESKTOP-CO1IJNF = 192.168.1.12
+[Network Analyzer (20bc: e10)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid= 12)  PROXIED!
+[Network Analyzer (20bc: e10)] Address lookup for DESKTOP-CO1IJNF = 192.168.1.12
+[Network Analyzer (20bc: e10)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid= 13)  PROXIED!
+[Web Request      (20bc:11bc)] "GET /WebTours/images/itinerary.gif"   
+[Network Analyzer (20bc:11bc)]   (Sid: 12) Client -> Server @ : 640 bytes (Service=HTTP)
+[Web Request      (20bc:11bc)] "GET /WebTours/images/in_home.gif"   
+[Network Analyzer (20bc:11bc)]   (Sid: 13) Client -> Server @ : 638 bytes (Service=HTTP)
+[Network Analyzer (20bc: e10)] Address lookup for DESKTOP-CO1IJNF = 192.168.1.12
+[Network Analyzer (20bc:11bc)]   (Sid: 12) Server -> Client : 1032 bytes  (Service=HTTP)
+[Network Analyzer (20bc:11bc)]   (Sid: 13) Server -> Client : 987 bytes  (Service=HTTP)
+[Network Analyzer (20bc: e10)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid= 14)  PROXIED!
+[Network Analyzer (20bc:11bc)]   (Sid: 10) Server -> Client : 1024 bytes  (Service=HTTP)
+[Web Request      (20bc:11bc)] "GET /WebTours/images/signoff.gif"   
+[Network Analyzer (20bc:11bc)]   (Sid: 14) Client -> Server @ : 638 bytes (Service=HTTP)
+[Network Analyzer (20bc:11bc)]   (Sid: 14) Server -> Client : 1050 bytes  (Service=HTTP)
+[Network Analyzer (20bc:11bc)]   (Sid: 11) Server -> Client : 1154 bytes  (Service=HTTP)
+[Network Analyzer (20bc:11bc)]   (Sid: 11) Server -> Client : 5 bytes  (Service=HTTP)
+[User action                 ] EndTransactionEvent 1_Login [Network Analyzer (20bc:11bc)]   (Sid: 12) Connection Terminated (by Server)
+[Network Analyzer (20bc:11bc)]   (Sid: 13) Connection Terminated (by Server)
+[Network Analyzer (20bc:11bc)]   (Sid: 10) Connection Terminated (by Server)
+[Network Analyzer (20bc:11bc)]   (Sid: 14) Connection Terminated (by Server)
+[Network Analyzer (20bc:11bc)]   (Sid: 11) Connection Terminated (by Server)
+[User action                 ] StartTransactionEvent 2_Itinerary [API Trapper      (3d54:3adc)] Recording in 64-bit mode: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+[Network Analyzer (20bc: e10)] Address lookup for DESKTOP-CO1IJNF = 192.168.1.12
+[Network Analyzer (20bc: e10)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid= 15)  PROXIED!
+[Web Request      (20bc:11bc)] "GET /cgi-bin/welcome.pl?page=itinerary"   
+[Network Analyzer (20bc:11bc)]   (Sid: 15) Client -> Server @ : 780 bytes (Service=HTTP)
+[Network Analyzer (20bc:11bc)]   (Sid: 15) Server -> Client : 814 bytes  (Service=HTTP)
+[Network Analyzer (20bc:11bc)]   (Sid: 15) Server -> Client : 5 bytes  (Service=HTTP)
+[Web Request      (20bc:11bc)] "GET /cgi-bin/nav.pl?page=menu&in=itinerary"   
+[Network Analyzer (20bc:11bc)]   (Sid: 15) Client -> Server @ : 765 bytes (Service=HTTP)
+[Network Analyzer (20bc: e10)] Address lookup for DESKTOP-CO1IJNF = 192.168.1.12
+[Network Analyzer (20bc: e10)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid= 16)  PROXIED!
+[Network Analyzer (20bc:11bc)]   (Sid: 15) Server -> Client : 1744 bytes  (Service=HTTP)
+[Network Analyzer (20bc:11bc)]   (Sid: 15) Server -> Client : 5 bytes  (Service=HTTP)
+[Web Request      (20bc:11bc)] "GET /cgi-bin/itinerary.pl"   
+[Network Analyzer (20bc:11bc)]   (Sid: 16) Client -> Server @ : 748 bytes (Service=HTTP)
+[Web Request      (20bc:11bc)] "GET /WebTours/images/in_itinerary.gif"   
+[Network Analyzer (20bc:11bc)]   (Sid: 15) Client -> Server @ : 648 bytes (Service=HTTP)
+[Network Analyzer (20bc: e10)] Address lookup for DESKTOP-CO1IJNF = 192.168.1.12
+[Network Analyzer (20bc: e10)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid= 17)  PROXIED!
+[Network Analyzer (20bc:11bc)]   (Sid: 15) Server -> Client : 1031 bytes  (Service=HTTP)
+[Web Request      (20bc:11bc)] "GET /WebTours/images/home.gif"   
+[Network Analyzer (20bc:11bc)]   (Sid: 17) Client -> Server @ : 640 bytes (Service=HTTP)
+[Network Analyzer (20bc:11bc)]   (Sid: 17) Server -> Client : 987 bytes  (Service=HTTP)
+[Network Analyzer (20bc:11bc)]   (Sid: 16) Server -> Client : 4235 bytes  (Service=HTTP)
+[Network Analyzer (20bc:11bc)]   (Sid: 16) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (20bc:11bc)]   (Sid: 16) Server -> Client : 1817 bytes  (Service=HTTP)
+[Web Request      (20bc:11bc)] "GET /WebTours/images/cancelreservation.gif"   
+[Network Analyzer (20bc:11bc)]   (Sid: 16) Client -> Server @ : 636 bytes (Service=HTTP)
+[Web Request      (20bc:11bc)] "GET /WebTours/images/cancelallreservations.gif"   
+[Network Analyzer (20bc:11bc)]   (Sid: 17) Client -> Server @ : 640 bytes (Service=HTTP)
+[Network Analyzer (20bc:11bc)]   (Sid: 17) Server -> Client : 1040 bytes  (Service=HTTP)
+[Network Analyzer (20bc:11bc)]   (Sid: 16) Server -> Client : 1129 bytes  (Service=HTTP)
+[Network Analyzer (20bc:11bc)]   (Sid: 15) Connection Terminated (by Server)
+[Network Analyzer (20bc:11bc)]   (Sid: 17) Connection Terminated (by Server)
+[Network Analyzer (20bc:11bc)]   (Sid: 16) Connection Terminated (by Server)
+[User action                 ] EndTransactionEvent 2_Itinerary [Network Analyzer (20bc: e10)] Address lookup for DESKTOP-CO1IJNF = 192.168.1.12
+[Network Analyzer (20bc: e10)] Request Connection: Remote Server @ 108.177.14.94:443   (Service=)  (Sid= 18)  PROXIED!
+[Network Analyzer (20bc:2afc)]   (Sid: 18) Negotiate Proxy -> Server SSL Handshake (ssl:TLSv1.1, ciphers:ECDHE-RSA-AES128-SHA)
+[Network Analyzer (20bc:2afc)]   (Sid: 18) Negotiate Client -> Proxy SSL Handshake (ssl:TLSv1.2, ciphers:ECDHE-RSA-AES128-GCM-SHA256)
+[Network Analyzer (20bc:11bc)]   (Sid: 18) Client -> Server @ : 1136 bytes (SSL)(Service=HTTP)
+[Web Request      (20bc:11bc)] "POST /service/update2/json?cup2key=10:2317734651&cup2hreq=aee9aecdbc713fd4bac1a5f017d2c2d82f11118c8698da150b9d59febb65e8d8"   
+[Network Analyzer (20bc:11bc)]   (Sid: 18) Client -> Server @ : 5913 bytes (SSL)(Service=HTTP)
+[Network Analyzer (20bc:11bc)]   (Sid: 18) Server -> Client : 1320 bytes (SSL) (Service=HTTP)
+[Network Analyzer (20bc:11bc)]   (Sid: 18) Server -> Client : 842 bytes (SSL) (Service=HTTP)
+[Network Analyzer (20bc:11bc)]   (Sid: 18) Server -> Client : 5 bytes (SSL) (Service=HTTP)
+[User action                 ] StartTransactionEvent 3_Cancel_All [Network Analyzer (20bc: e10)] Address lookup for DESKTOP-CO1IJNF = 192.168.1.12
+[Network Analyzer (20bc: e10)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid= 19)  PROXIED!
+[Web Request      (20bc:11bc)] "POST /cgi-bin/itinerary.pl"   
+[Network Analyzer (20bc:11bc)]   (Sid: 19) Client -> Server @ : 1563 bytes (Service=HTTP)
+[Network Analyzer (20bc:11bc)]   (Sid: 19) Server -> Client : 1150 bytes  (Service=HTTP)
+[Network Analyzer (20bc:11bc)]   (Sid: 19) Server -> Client : 5 bytes  (Service=HTTP)
+[Network Analyzer (20bc:11bc)]   (Sid: 19) Connection Terminated (by Server)
+[User action                 ] EndTransactionEvent 3_Cancel_All [User action                 ] StartTransactionEvent 4_Sign_off [Network Analyzer (20bc: e10)] Address lookup for DESKTOP-CO1IJNF = 192.168.1.12
+[Network Analyzer (20bc: e10)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid= 20)  PROXIED!
+[Web Request      (20bc:11bc)] "GET /cgi-bin/welcome.pl?signOff=1"   
+[Network Analyzer (20bc:11bc)]   (Sid: 20) Client -> Server @ : 780 bytes (Service=HTTP)
+[Network Analyzer (20bc:11bc)]   (Sid: 20) Server -> Client : 1021 bytes  (Service=HTTP)
+[Network Analyzer (20bc:11bc)]   (Sid: 20) Server -> Client : 5 bytes  (Service=HTTP)
+[Web Request      (20bc:11bc)] "GET /cgi-bin/nav.pl?in=home"   
+[Network Analyzer (20bc:11bc)]   (Sid: 20) Client -> Server @ : 635 bytes (Service=HTTP)
+[Network Analyzer (20bc: e10)] Address lookup for DESKTOP-CO1IJNF = 192.168.1.12
+[Network Analyzer (20bc: e10)] Request Connection: Remote Server @ 127.0.0.1:1080   (Service=)  (Sid= 21)  PROXIED!
+[Network Analyzer (20bc:11bc)]   (Sid: 20) Server -> Client : 1748 bytes  (Service=HTTP)
+[Network Analyzer (20bc:11bc)]   (Sid: 20) Server -> Client : 5 bytes  (Service=HTTP)
+[Web Request      (20bc:11bc)] "GET /WebTours/home.html"   
+[Network Analyzer (20bc:11bc)]   (Sid: 21) Client -> Server @ : 732 bytes (Service=HTTP)
+[Network Analyzer (20bc:11bc)]   (Sid: 21) Server -> Client : 195 bytes  (Service=HTTP)
+[User action                 ] EndTransactionEvent 4_Sign_off [Network Analyzer (20bc:11bc)]   (Sid: 21) Connection Terminated (by Server)
+[Network Analyzer (20bc:11bc)]   (Sid: 20) Connection Terminated (by Server)

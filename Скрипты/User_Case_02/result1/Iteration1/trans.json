@@ -1,0 +1,32 @@
+[
+    {
+        "transactionName": "1_Login",
+        "rawStartTime": 1594986057186,
+        "rawEndTime": 1594986057438
+    },
+    {
+        "transactionName": "2_Flights",
+        "rawStartTime": 1594986057460,
+        "rawEndTime": 1594986057781
+    },
+    {
+        "transactionName": "3_Flight_Search",
+        "rawStartTime": 1594986057783,
+        "rawEndTime": 1594986057929
+    },
+    {
+        "transactionName": "4_Flight_Selection",
+        "rawStartTime": 1594986057933,
+        "rawEndTime": 1594986058034
+    },
+    {
+        "transactionName": "5_Payment_Details",
+        "rawStartTime": 1594986058036,
+        "rawEndTime": 1594986058165
+    },
+    {
+        "transactionName": "6_Sign_Off",
+        "rawStartTime": 1594986058167,
+        "rawEndTime": 1594986058304
+    }
+]

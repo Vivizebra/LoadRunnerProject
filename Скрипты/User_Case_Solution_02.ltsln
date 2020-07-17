@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+# SharpDevelop 4.1.3.0
+Project("F877F192-D241-4715-AF66-FA0CC7B57A6A") = "User_Case_02", "User_Case_02\User_Case_02.usr", "F877F192-D241-4715-AF66-FA0CC7B57A6A"
+	ProjectSection(CustomLoading) = Data
+		Token = PD94bWwgdmVyc2lvbj0iMS4wIj8+DQo8UGVyc2lzdGVuY2VUb2tlbj4NCiAgPExvYWREYXRhPkM6XFVzZXJzXEhZUEVSUENcRGVza3RvcFxHaXRSZXBvc2l0b3J5XNCh0LrRgNC40L/RgtGLXFVzZXJfQ2FzZV8wMlxVc2VyX0Nhc2VfMDIudXNyPC9Mb2FkRGF0YT4NCiAgPEZpbGVzPg0KICAgIDxGaWxlPkM6XFVzZXJzXEhZUEVSUENcRGVza3RvcFxHaXRSZXBvc2l0b3J5XNCh0LrRgNC40L/RgtGLXFVzZXJfQ2FzZV8wMlxVc2VyX0Nhc2VfMDIudXNyPC9GaWxlPg0KICA8L0ZpbGVzPg0KICA8TW9kaWZpZWQ+MjAyMC0wNy0xN1QxMzo1MTowNC4wMDc3NTU2KzAzOjAwPC9Nb2RpZmllZD4NCjwvUGVyc2lzdGVuY2VUb2tlbj4_
+	EndProjectSection
+	ProjectSection(ExpandInVugen) = Data
+		Value = True
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		F877F192-D241-4715-AF66-FA0CC7B57A6A.Debug|Any CPU.Build.0 = Debug|Any CPU
+		F877F192-D241-4715-AF66-FA0CC7B57A6A.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		F877F192-D241-4715-AF66-FA0CC7B57A6A.Release|Any CPU.Build.0 = Release|Any CPU
+		F877F192-D241-4715-AF66-FA0CC7B57A6A.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+EndGlobal
