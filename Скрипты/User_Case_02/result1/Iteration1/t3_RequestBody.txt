@@ -1,3 +1,0 @@
-"{"msg":1073143390,"event":"view","token":"5cf6a8c41a6b357eddab0af9","extra":{"timeCreate":"5c6"
-"e7d75","price":0.004,"timeSent":"5f1185c0","priceW":1,"siteId":4297,"source":"db2","tag":"C",""
-"lang":"ru","hash":"db2:0:Xv0pIU1G3KXgPiVtGz7Nnw","content":1508},"version":"2.1"}"

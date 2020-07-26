@@ -1,0 +1,207 @@
+Failed to get information of process Id: 0
+Failed to get information of process Id: 4
+Failed to get information of process Id: 120
+Failed to get information of process Id: 452
+Failed to get information of process Id: 600
+Failed to get information of process Id: 696
+Failed to get information of process Id: 704
+Failed to get information of process Id: 768
+Failed to get information of process Id: 780
+Failed to get information of process Id: 908
+Failed to get information of process Id: 928
+Failed to get information of process Id: 948
+Failed to get information of process Id: 100
+Failed to get information of process Id: 512
+Failed to get information of process Id: 8
+Failed to get information of process Id: 856
+Failed to get information of process Id: 1040
+Failed to get information of process Id: 1096
+Failed to get information of process Id: 1208
+Failed to get information of process Id: 1280
+Failed to get information of process Id: 1324
+Failed to get information of process Id: 1360
+Failed to get information of process Id: 1460
+Failed to get information of process Id: 1524
+Failed to get information of process Id: 1552
+Failed to get information of process Id: 1632
+Failed to get information of process Id: 1664
+Failed to get information of process Id: 1708
+Failed to get information of process Id: 1804
+Failed to get information of process Id: 1832
+Failed to get information of process Id: 1956
+Failed to get information of process Id: 1972
+Failed to get information of process Id: 1312
+Failed to get information of process Id: 2064
+Failed to get information of process Id: 2072
+Failed to get information of process Id: 2080
+Failed to get information of process Id: 2092
+Failed to get information of process Id: 2212
+Failed to get information of process Id: 2252
+Failed to get information of process Id: 2292
+Failed to get information of process Id: 2300
+Failed to get information of process Id: 2492
+Failed to get information of process Id: 2612
+Failed to get information of process Id: 2668
+Failed to get information of process Id: 2676
+Failed to get information of process Id: 2716
+Failed to get information of process Id: 2876
+Failed to get information of process Id: 2968
+Failed to get information of process Id: 3068
+Failed to get information of process Id: 3180
+Failed to get information of process Id: 3188
+Failed to get information of process Id: 3200
+Failed to get information of process Id: 3208
+Failed to get information of process Id: 3216
+Failed to get information of process Id: 3224
+Failed to get information of process Id: 3232
+Failed to get information of process Id: 3248
+Failed to get information of process Id: 3256
+Failed to get information of process Id: 3264
+Failed to get information of process Id: 3328
+Failed to get information of process Id: 3344
+Failed to get information of process Id: 3352
+Failed to get information of process Id: 3392
+Failed to get information of process Id: 3400
+Failed to get information of process Id: 3408
+Failed to get information of process Id: 3436
+Failed to get information of process Id: 3512
+Failed to get information of process Id: 3644
+Failed to get information of process Id: 3788
+Failed to get information of process Id: 3852
+Failed to get information of process Id: 3896
+Failed to get information of process Id: 4080
+Failed to get information of process Id: 4044
+Failed to get information of process Id: 4112
+Failed to get information of process Id: 4128
+Failed to get information of process Id: 4352
+Failed to get information of process Id: 4700
+Failed to get information of process Id: 4860
+Failed to get information of process Id: 4916
+Failed to get information of process Id: 5440
+Failed to get information of process Id: 5880
+Failed to get information of process Id: 6060
+Failed to get information of process Id: 6068
+Failed to get information of process Id: 5732
+Failed to get information of process Id: 6452
+Failed to get information of process Id: 6616
+Failed to get information of process Id: 6892
+Failed to get information of process Id: 7016
+Failed to get information of process Id: 7056
+Failed to get information of process Id: 7064
+Failed to get information of process Id: 7148
+Failed to get information of process Id: 3796
+Failed to get information of process Id: 2448
+Failed to get information of process Id: 7176
+Failed to get information of process Id: 7248
+Failed to get information of process Id: 7300
+Failed to get information of process Id: 7396
+Failed to get information of process Id: 7604
+Failed to get information of process Id: 7612
+Failed to get information of process Id: 7712
+Failed to get information of process Id: 8172
+Failed to get information of process Id: 7696
+Failed to get information of process Id: 8312
+Failed to get information of process Id: 8512
+Failed to get information of process Id: 8912
+Failed to get information of process Id: 8980
+Failed to get information of process Id: 9152
+PROCESS 0x1da8      nvidia web helper.exe
+Failed to get information of process Id: 8372
+Failed to get information of process Id: 9036
+Failed to get information of process Id: 7580
+Failed to get information of process Id: 7552
+Failed to get information of process Id: 9488
+Failed to get information of process Id: 9548
+Failed to get information of process Id: 9964
+Failed to get information of process Id: 10112
+Failed to get information of process Id: 10236
+Failed to get information of process Id: 8724
+Failed to get information of process Id: 10616
+Failed to get information of process Id: 1948
+Failed to get information of process Id: 10028
+Failed to get information of process Id: 9988
+Failed to get information of process Id: 12260
+Failed to get information of process Id: 12268
+Failed to get information of process Id: 11320
+Failed to get information of process Id: 11372
+PROCESS 0x2d04      magentproc.exe
+PROCESS 0x2d80      steam.exe
+PROCESS 0x2dc4      wallpaper32.exe
+PROCESS 0x2cb0      spotify.exe
+PROCESS 0x20cc      spotify.exe
+PROCESS 0x289c      spotify.exe
+PROCESS 0x734       spotify.exe
+PROCESS 0x840       spotify.exe
+Failed to get information of process Id: 10808
+Failed to get information of process Id: 7680
+Failed to get information of process Id: 4792
+Failed to get information of process Id: 5468
+Failed to get information of process Id: 12904
+Failed to get information of process Id: 5056
+Failed to get information of process Id: 13564
+Failed to get information of process Id: 14324
+Failed to get information of process Id: 12932
+Failed to get information of process Id: 4124
+Failed to get information of process Id: 12720
+Failed to get information of process Id: 3448
+PROCESS 0x3580      telegram.exe
+Failed to get information of process Id: 7160
+Failed to get information of process Id: 11060
+Failed to get information of process Id: 2696
+Failed to get information of process Id: 13896
+Failed to get information of process Id: 5384
+Failed to get information of process Id: 12988
+Failed to get information of process Id: 7196
+PROCESS 0x1c48      winword.exe
+Failed to get information of process Id: 10656
+Failed to get information of process Id: 12764
+Failed to get information of process Id: 13996
+Failed to get information of process Id: 12336
+Failed to get information of process Id: 8624
+Failed to get information of process Id: 13920
+Failed to get information of process Id: 11092
+Failed to get information of process Id: 860
+Failed to get information of process Id: 8460
+Failed to get information of process Id: 3120
+Failed to get information of process Id: 12224
+Failed to get information of process Id: 9888
+Failed to get information of process Id: 10456
+Failed to get information of process Id: 3496
+Failed to get information of process Id: 6104
+Failed to get information of process Id: 13528
+Failed to get information of process Id: 6636
+Failed to get information of process Id: 2364
+Failed to get information of process Id: 5104
+Failed to get information of process Id: 540
+Failed to get information of process Id: 10136
+Failed to get information of process Id: 13100
+Failed to get information of process Id: 13656
+Failed to get information of process Id: 14952
+Failed to get information of process Id: 16624
+Failed to get information of process Id: 14636
+Failed to get information of process Id: 2932
+PROCESS 0x3d7c      webwallpaper32.exe
+PROCESS 0x2c88      webwallpaper32.exe
+PROCESS 0x3d68      webwallpaper32.exe
+Failed to get information of process Id: 14268
+Failed to get information of process Id: 8612
+Failed to get information of process Id: 3760
+Failed to get information of process Id: 16584
+PROCESS 0x4150      httpd.exe
+PROCESS 0x1fe8      httpd.exe
+PROCESS 0x4294      vugen.exe
+Failed to get information of process Id: 14632
+Failed to get information of process Id: 3892
+Failed to get information of process Id: 16044
+Failed to get information of process Id: 536
+Failed to get information of process Id: 4156
+PROCESS 0x11a4      rundll32.exe
+PROCESS 0xc54       rundll32.exe
+PROCESS 0x3be4      rundll32.exe
+PROCESS 0x400c      rundll32.exe
+Failed to get information of process Id: 17236
+Failed to get information of process Id: 7212
+Failed to get information of process Id: 14672
+Failed to get information of process Id: 6840
+Failed to get information of process Id: 4636
+Failed to get information of process Id: 14768

@@ -1,9 +1,0 @@
--+
--DCCI
--D_IDA_XL
--DWINNT
--IC:\Users\HYPERPC\Desktop\GitRepository\Скрипты\User_Case_02
--IC:\Users\HYPERPC\Desktop\GitRepository\LRInstall\include
--ec:\users\hyperpc\desktop\gitrepository\скрипты\user_case_02\\logfile.log
-c:\users\hyperpc\desktop\gitrepository\скрипты\user_case_02\\combined_User_Case_02.c
-c:\users\hyperpc\desktop\gitrepository\скрипты\user_case_02\\pre_cci.c

@@ -1,0 +1,5 @@
+300
+)]}'
+{"response":{"server":"prod","protocol":"3.1","daystart":{"elapsed_seconds":44742,"elapsed_days":4954},"app":[{"appid":"kbfnbcaeplbcioakkpcpgfkobkghlhen","cohort":"","status":"ok","cohortname":"","ping":{"status":"ok"},"updatecheck":{"status":"ok","urls":{"url":[{"codebase":"https://clients2.googleusercontent.com/crx/blobs/QwAAAHF3InbmK-wFIemaY3I3BCPR_ZCKuWV9RfyJK_6NnqvizL-yskQNrgjGSp5ffptabWqzPk1VpOC158g0E8c8FUZs9Iwg-1tmtDEeGHFqcJnaAMZSmuV38jMHf032Ne2UfbIUrz7MsAyDlQ/"}]},"manifest":{"version":"14.966.0","packages":{"package":[{"hash_sha256":"9b2354bf1f10da8fc103f3fe5f312b61908cfdf689f85af9c82945e5ef4b2e5c","size":54660646,"name":"extension_14_966_0_0.crx","fp":"1.9b2354bf1f10da8fc103f3fe5f312b61908cfdf689f85af9c82945e5ef4b2e5c","required":true}]}}}}]}}
+0
+

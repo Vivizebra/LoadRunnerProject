@@ -1,0 +1,37 @@
+{
+  "version": "10",
+  "safariAppExtensionMigration_1558396627629": {
+    "legacyStopWorkingDate": "2019-08-02"
+  },
+  "newRichTextFieldsEnabled_1567530773088": true,
+  "slatejsEditorsEnabled_1590791113022": true,
+  "fluidDisabledForFirefox_1567530773089": false,
+  "fluidDisabledForSafari_1567530773090": false,
+  "gmailSendEmailPopup_1588710046696": {
+    "enableByBrowser": {
+      "chrome": true,
+      "safari": true,
+      "firefox": true,
+      "edge": true
+    }
+  },
+  "iframeIntegration_1593643390051": {
+    "enableBySiteAndBrowser": {
+      "salesforce": {
+        "chrome": true
+      },
+      "zendesk": {
+        "chrome": true
+      },
+      "facebook": {
+        "chrome": true
+      }
+    }
+  },
+  "autocorrect_1579700246281": {
+    "disabled": false,
+    "bannedDict": ["Poopy", "poopy", "blacklist", "whitelist"],
+    "bannedCorrections": []
+  },
+  "fullSentenceRewritesDisabled_1595353312714": false
+}

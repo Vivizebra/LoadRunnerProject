@@ -1,0 +1,67 @@
+Virtual User Script started at: 26/07/2020 05:49:47
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 12.55.0 for Windows 10; build 911 (Jul 24 2017 19:46:00)  	[MsgId: MMSG-26983]
+Run mode: HTML  	[MsgId: MMSG-26993]
+Replay user agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36  	[MsgId: MMSG-26988]
+Run-Time Settings file: "D:\GitHubLocal\LoadRunnerProject\Scripts\03_Cancel_All_Flights\\default.cfg"  	[MsgId: MMSG-27141]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Maximum number of concurrent connections per server: 6  	[MsgId: MMSG-26989]
+Starting action Action.
+Action.c(4): Notify: Transaction "03_Cancel_All" started.
+Action.c(6): Notify: Transaction "WebTours" started.
+Action.c(7): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(7): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(8): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(8): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(11): web_set_sockets_option started  	[MsgId: MMSG-26355]
+Action.c(11): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
+Action.c(13): web_add_auto_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
+Action.c(13): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(16): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(16): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(19): web_add_auto_header("Sec-Fetch-Mode") started  	[MsgId: MMSG-26355]
+Action.c(19): web_add_auto_header("Sec-Fetch-Mode") was successful  	[MsgId: MMSG-26392]
+Action.c(22): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(22): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(25): web_url("WebTours") started  	[MsgId: MMSG-26355]
+Action.c(25): Detected non-resource "http://localhost:1080/WebTours/header.html" in "http://localhost:1080/WebTours/"  	[MsgId: MMSG-26574]
+Action.c(25): Detected non-resource "http://localhost:1080/cgi-bin/welcome.pl?signOff=true" in "http://localhost:1080/WebTours/"  	[MsgId: MMSG-26574]
+Action.c(25): Found resource "http://localhost:1080/WebTours/images/hp_logo.png" in HTML "http://localhost:1080/WebTours/header.html"  	[MsgId: MMSG-26659]
+Action.c(25): Found resource "http://localhost:1080/WebTours/images/webtours.png" in HTML "http://localhost:1080/WebTours/header.html"  	[MsgId: MMSG-26659]
+Action.c(25): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?in=home" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=true"  	[MsgId: MMSG-26574]
+Action.c(25): Detected non-resource "http://localhost:1080/WebTours/home.html" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=true"  	[MsgId: MMSG-26574]
+Action.c(25): Found resource "http://localhost:1080/WebTours/images/mer_login.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?in=home"  	[MsgId: MMSG-26659]
+Action.c(25): Registered web_reg_find successful for "Text=enter your account" (count=1)  	[MsgId: MMSG-26364]
+Action.c(25): web_url("WebTours") was successful, 10080 body bytes, 2371 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(38): Notify: Transaction "WebTours" ended with a "Pass" status (Duration: 0.3217 Wasted Time: 0.0836).
+Action.c(47): Notify: Transaction "Login" started.
+Action.c(49): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(49): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(51): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(51): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(54): web_remove_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(54): Previous automatically added web header for "Upgrade-Insecure-Requests" removed  	[MsgId: MMSG-26587]
+Action.c(54): web_remove/revert_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(56): web_add_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(56): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(59): web_add_auto_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
+Action.c(59): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(62): web_add_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(62): web_add_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(67): web_submit_data("login.pl") started  	[MsgId: MMSG-26355]
+Action.c(67): Error -26366: "Text=you can search" not found for web_reg_find  	[MsgId: MERR-26366]
+Action.c(67): web_submit_data("login.pl") highest severity level was "ERROR", 795 body bytes, 228 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26387]
+Action.c(67): Notify: Transaction "Login" ended with a "Fail" status (Duration: 0.2337 Wasted Time: 0.0047).
+Action.c(67): Notify: Transaction "Login" has 1 error message(s).
+Action.c(67): Notify: The 1st error message associated with transaction "Login" is "Error -26366: "Text=you can search" not found for web_reg_find"
+Action.c(67): Notify: Transaction "03_Cancel_All" ended with a "Fail" status (Duration: 0.8237 Wasted Time: 0.0883).
+Action.c(67): Notify: Transaction "03_Cancel_All" has 1 error message(s).
+Action.c(67): Notify: The 1st error message associated with transaction "03_Cancel_All" is "Error -26366: "Text=you can search" not found for web_reg_find"
+Ending action Action.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.

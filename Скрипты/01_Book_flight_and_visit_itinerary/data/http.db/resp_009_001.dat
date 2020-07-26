@@ -1,0 +1,10 @@
+33e
+{
+  "issueAdvice": "auto",
+  "token": "ya29.a0AfH6SMAw7U9kBhhApZwP8RFkAmxPLU74BkOfeYvw6dw8s3Y4VCZk0QplJttIX9Uc2nelH_dl6fCNthq6ZMgoe30Svxxz3OHavbKSFOnz7zx67Sg6W7sYuKVeyGMOfaD9VrIKTaMch0lA-5ZvuGSRf0wx407wZgvE6bY6ZjOOM95dTspuxVrabn862oo4ckwKQa_UZT8TPTZNMFipNaBXxeFcSKmTcUjF5ztoW-l-hj3J5QPVzIXsNCbf6xE4d3uba0KHhdNgV3GNfyEOQS1ES5pt4ggdM2Sq5VJkQmg8G98mXotyPDE_e86jTv30LpDfrW43ET7X_iazPbFySg",
+  "expiresIn": "3599",
+  "grantedScopes": "https://www.googleapis.com/auth/meetings https://www.googleapis.com/auth/userinfo.email email https://www.googleapis.com/auth/clouddevices https://www.googleapis.com/auth/hangouts openid https://www.googleapis.com/auth/cast-edu-messaging https://www.googleapis.com/auth/peopleapi.legacy.readwrite https://www.googleapis.com/auth/calendar.readonly https://www.googleapis.com/auth/hangouts.readonly"
+}
+
+0
+

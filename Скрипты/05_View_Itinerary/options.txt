@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-ID:\GitHubLocal\LoadRunnerProject\Scripts\05_View_Itinerary
+-ID:\TesterJobStuff\LRCom\New Folder\include
+-ed:\githublocal\loadrunnerproject\scripts\05_view_itinerary\\logfile.log
+d:\githublocal\loadrunnerproject\scripts\05_view_itinerary\\combined_05_View_Itinerary.c
+d:\githublocal\loadrunnerproject\scripts\05_view_itinerary\\pre_cci.c

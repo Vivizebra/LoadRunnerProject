@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-ID:\GitHubLocal\LoadRunnerProject\Scripts\01_Book_flight_and_visit_itinerary
+-ID:\TesterJobStuff\LRCom\New Folder\include
+-ed:\githublocal\loadrunnerproject\scripts\01_book_flight_and_visit_itinerary\\logfile.log
+d:\githublocal\loadrunnerproject\scripts\01_book_flight_and_visit_itinerary\\combined_01_Book_flight_and_visit_itinerary.c
+d:\githublocal\loadrunnerproject\scripts\01_book_flight_and_visit_itinerary\\pre_cci.c

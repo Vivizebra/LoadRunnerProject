@@ -1,0 +1,22 @@
+{
+  "version": "7",
+  "safariAppExtensionMigration_1558396627629": {
+    "legacyStopWorkingDate": "2019-08-02"
+  },
+  "newRichTextFieldsEnabled_1567530773088": true,
+  "fluidDisabledForFirefox_1567530773089": false,
+  "fluidDisabledForSafari_1567530773090": false,
+  "gmailSendEmailPopup_1588710046696": {
+    "enableByBrowser": {
+      "chrome": true,
+      "safari": true,
+      "firefox": true,
+      "edge": true
+    }
+  },
+  "autocorrect_1579700246281": {
+    "disabled": false,
+    "bannedDict": ["Poopy", "poopy"],
+    "bannedCorrections": []
+  }
+}
