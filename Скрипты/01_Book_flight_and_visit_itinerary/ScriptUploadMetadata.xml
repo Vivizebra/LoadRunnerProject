@@ -19,7 +19,6 @@
     <FileEntry Name="loginPar.dat" Filter="2" />
     <FileEntry Name="seatPrefPar.dat" Filter="2" />
     <FileEntry Name="seatTypePar.dat" Filter="2" />
-    <FileEntry Name="passengersPar.dat" Filter="2" />
     <FileEntry Name="expPar.dat" Filter="2" />
     <FileEntry Name="creditPar.dat" Filter="2" />
     <FileEntry Name="passPar.dat" Filter="2" />
@@ -28,6 +27,7 @@
     <FileEntry Name="pre_cci.c" Filter="2" />
     <FileEntry Name="01_Book_flight_and_visit_itinerary.c.pickle" Filter="1" />
     <FileEntry Name="01_Book_flight_and_visit_itinerary.ci" Filter="1" />
+    <FileEntry Name="01_Book_flight_and_visit_itinerary.prm.bak" Filter="1" />
     <FileEntry Name="01_Book_flight_and_visit_itinerary.sdf" Filter="1" />
     <FileEntry Name="118013999440.idx" Filter="1" />
     <FileEntry Name="160836943440.idx" Filter="1" />
@@ -50,6 +50,7 @@
     <FileEntry Name="options.txt" Filter="1" />
     <FileEntry Name="output.bak" Filter="1" />
     <FileEntry Name="output.txt" Filter="1" />
+    <FileEntry Name="passengersPar.dat" Filter="1" />
     <FileEntry Name="replay.har" Filter="1" />
     <FileEntry Name="ReplaySummaryReport.xml" Filter="1" />
     <FileEntry Name="ScriptUploadMetadata.xml" Filter="1" />

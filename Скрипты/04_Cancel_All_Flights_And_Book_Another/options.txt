@@ -1,9 +1,0 @@
--+
--DCCI
--D_IDA_XL
--DWINNT
--ID:\GitHubLocal\LoadRunnerProject\Scripts\04_Cancel_All_Flights_And_Book_Another
--ID:\TesterJobStuff\LRCom\New Folder\include
--ed:\githublocal\loadrunnerproject\scripts\04_cancel_all_flights_and_book_another\\logfile.log
-d:\githublocal\loadrunnerproject\scripts\04_cancel_all_flights_and_book_another\\combined_04_Cancel_All_Flights_And_Book_Another.c
-d:\githublocal\loadrunnerproject\scripts\04_cancel_all_flights_and_book_another\\pre_cci.c

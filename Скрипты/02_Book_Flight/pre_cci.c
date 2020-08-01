@@ -2722,7 +2722,9 @@ Action()
 
 
 	lr_start_transaction("Flight_Search");
-	 web_reg_find("Text=departing from","SaveCount=DepartureCount","Fail=NotFound","LAST");
+	web_reg_save_param ("corOutboundFlight","LB= name=\"outboundFlight\" value=\"","RB=\"", "LAST");
+	web_reg_find("Text=departing from","SaveCount=DepartureCount","Fail=NotFound","LAST");
+	web_reg_find("Text=<B>{departPar}</B> to <B>{arrivePar}</B>","SaveCount=CityCheck","Fail=NotFound","LAST");
 
 	web_add_auto_header("Origin", 
 		"http://localhost:1080");
@@ -2743,10 +2745,10 @@ Action()
 		"ITEMDATA", 
 		"Name=advanceDiscount", "Value=0", "ENDITEM", 
 		"Name=depart", "Value={departPar}", "ENDITEM", 
-		"Name=departDate", "Value=07/27/2020", "ENDITEM", 
+		"Name=departDate", "Value={departureDate}", "ENDITEM", 
 		"Name=arrive", "Value={arrivePar}", "ENDITEM", 
-		"Name=returnDate", "Value=07/28/2020", "ENDITEM", 
-		"Name=numPassengers", "Value={passengersPar}", "ENDITEM", 
+		"Name=returnDate", "Value={returnDate}", "ENDITEM", 
+		"Name=numPassengers", "Value=1", "ENDITEM", 
 		"Name=seatPref", "Value={seatPrefPar}", "ENDITEM", 
 		"Name=seatType", "Value={seatTypePar}", "ENDITEM", 
 		"Name=findFlights.x", "Value=68", "ENDITEM", 
@@ -2756,7 +2758,7 @@ Action()
 		"Name=.cgifields", "Value=seatPref", "ENDITEM", 
 		"LAST");
 
-        if(atoi(lr_eval_string("{DepartureCount}"))>0)
+        if(atoi(lr_eval_string("{DepartureCount}"))>0 && atoi(lr_eval_string("{CityCheck}"))>0)
 
         {
         lr_end_transaction("Flight_Search",0);
@@ -2782,8 +2784,8 @@ Action()
 		"Snapshot=t5.inf", 
 		"Mode=HTML", 
 		"ITEMDATA", 
-		"Name=outboundFlight", "Value=000;0;07/27/2020", "ENDITEM", 
-		"Name=numPassengers", "Value={passengersPar}", "ENDITEM", 
+		"Name=outboundFlight", "Value={corOutboundFlight}", "ENDITEM", 
+		"Name=numPassengers", "Value=1", "ENDITEM", 
 		"Name=advanceDiscount", "Value=0", "ENDITEM", 
 		"Name=seatType", "Value={seatTypePar}", "ENDITEM", 
 		"Name=seatPref", "Value={seatPrefPar}", "ENDITEM", 
@@ -2806,6 +2808,7 @@ Action()
 	lr_start_transaction("Payment_Data");
 	
 	web_reg_find("Text=Thank you for booking","SaveCount=BookingCount","Fail=NotFound","LAST");
+	web_reg_find("Text={departPar}  for {arrivePar}","SaveCount=CityCheck2","Fail=NotFound","LAST");
 
 	(web_remove_auto_header("Origin", "ImplicitGen=Yes", "LAST"));
 
@@ -2838,10 +2841,10 @@ Action()
 		"Name=creditCard", "Value={creditPar}", "ENDITEM", 
 		"Name=expDate", "Value={expPar}", "ENDITEM", 
 		"Name=oldCCOption", "Value=", "ENDITEM", 
-		"Name=numPassengers", "Value={passengersPar}", "ENDITEM", 
+		"Name=numPassengers", "Value=1", "ENDITEM", 
 		"Name=seatType", "Value={seatTypePar}", "ENDITEM", 
 		"Name=seatPref", "Value={seatPrefPar}", "ENDITEM", 
-		"Name=outboundFlight", "Value=000;0;07/27/2020", "ENDITEM", 
+		"Name=outboundFlight", "Value={corOutboundFlight}", "ENDITEM", 
 		"Name=advanceDiscount", "Value=0", "ENDITEM", 
 		"Name=returnFlight", "Value=", "ENDITEM", 
 		"Name=JSFormSubmit", "Value=off", "ENDITEM", 
@@ -2850,7 +2853,7 @@ Action()
 		"Name=.cgifields", "Value=saveCC", "ENDITEM", 
 		"LAST");
 
-        if(atoi(lr_eval_string("{BookingCount}"))>0)
+        if(atoi(lr_eval_string("{BookingCount}"))>0 && atoi(lr_eval_string("{CityCheck2}"))>0)
 
         {
         lr_end_transaction("Payment_Data",0);

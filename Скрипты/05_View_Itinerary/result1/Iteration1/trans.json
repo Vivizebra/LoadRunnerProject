@@ -1,27 +1,27 @@
 [
     {
         "transactionName": "WebTours",
-        "rawStartTime": 1595733760241,
-        "rawEndTime": 1595733760584
+        "rawStartTime": 1596275368509,
+        "rawEndTime": 1596275368926
     },
     {
         "transactionName": "Login",
-        "rawStartTime": 1595733760773,
-        "rawEndTime": 1595733761053
+        "rawStartTime": 1596275369120,
+        "rawEndTime": 1596275374419
     },
     {
         "transactionName": "Select_Itinerary",
-        "rawStartTime": 1595733761212,
-        "rawEndTime": 1595733761501
+        "rawStartTime": 1596275374626,
+        "rawEndTime": 1596275379966
     },
     {
         "transactionName": "Sign_Off",
-        "rawStartTime": 1595733761669,
-        "rawEndTime": 1595733761896
+        "rawStartTime": 1596275380139,
+        "rawEndTime": 1596275385565
     },
     {
         "transactionName": "05_View_Itinerary",
-        "rawStartTime": 1595733760125,
-        "rawEndTime": 1595733762049
+        "rawStartTime": 1596275368359,
+        "rawEndTime": 1596275385746
     }
 ]

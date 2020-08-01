@@ -19,6 +19,7 @@
     <FileEntry Name="pre_cci.c" Filter="2" />
     <FileEntry Name="05_View_Itinerary.c.pickle" Filter="1" />
     <FileEntry Name="05_View_Itinerary.ci" Filter="1" />
+    <FileEntry Name="05_View_Itinerary.prm.bak" Filter="1" />
     <FileEntry Name="05_View_Itinerary.sdf" Filter="1" />
     <FileEntry Name="165891401440.idx" Filter="1" />
     <FileEntry Name="263917307440.idx" Filter="1" />
@@ -31,6 +32,7 @@
     <FileEntry Name="mdrv.log" Filter="1" />
     <FileEntry Name="mdrv_cmd.txt" Filter="1" />
     <FileEntry Name="options.txt" Filter="1" />
+    <FileEntry Name="output.bak" Filter="1" />
     <FileEntry Name="output.txt" Filter="1" />
     <FileEntry Name="replay.har" Filter="1" />
     <FileEntry Name="ReplaySummaryReport.xml" Filter="1" />

@@ -112,7 +112,7 @@ Action()
 		"Mode=HTML", 
 		LAST);
 
-        if(atoi(lr_eval_string("{ItineraryCount}"))>0)
+        if(atoi(lr_eval_string("{ItineraryCount}"))>2)
 
         {
         lr_end_transaction("Select_Itinerary",LR_PASS);

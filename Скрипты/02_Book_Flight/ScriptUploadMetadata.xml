@@ -19,7 +19,6 @@
     <FileEntry Name="loginPar.dat" Filter="2" />
     <FileEntry Name="seatPrefPar.dat" Filter="2" />
     <FileEntry Name="seatTypePar.dat" Filter="2" />
-    <FileEntry Name="passengersPar.dat" Filter="2" />
     <FileEntry Name="expPar.dat" Filter="2" />
     <FileEntry Name="creditPar.dat" Filter="2" />
     <FileEntry Name="passPar.dat" Filter="2" />
@@ -52,6 +51,7 @@
     <FileEntry Name="options.txt" Filter="1" />
     <FileEntry Name="output.bak" Filter="1" />
     <FileEntry Name="output.txt" Filter="1" />
+    <FileEntry Name="passengersPar.dat" Filter="1" />
     <FileEntry Name="replay.har" Filter="1" />
     <FileEntry Name="ReplaySummaryReport.xml" Filter="1" />
     <FileEntry Name="ScriptUploadMetadata.xml" Filter="1" />

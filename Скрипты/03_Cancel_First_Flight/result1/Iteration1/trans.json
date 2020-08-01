@@ -1,0 +1,47 @@
+[
+    {
+        "transactionName": "WebTours",
+        "rawStartTime": 1596275206309,
+        "rawEndTime": 1596275206704
+    },
+    {
+        "transactionName": "Login",
+        "rawStartTime": 1596275206850,
+        "rawEndTime": 1596275212210
+    },
+    {
+        "transactionName": "Select_Itinerary",
+        "rawStartTime": 1596275212400,
+        "rawEndTime": 1596275217777
+    },
+    {
+        "transactionName": "Get_ID",
+        "rawStartTime": 1596275217947,
+        "rawEndTime": 1596275223226
+    },
+    {
+        "transactionName": "Cancel_First",
+        "rawStartTime": 1596275223403,
+        "rawEndTime": 1596275228703
+    },
+    {
+        "transactionName": "Get_ID_To_Compare",
+        "rawStartTime": 1596275229028,
+        "rawEndTime": 1596275234352
+    },
+    {
+        "transactionName": "Confirm_Deletion",
+        "rawStartTime": 1596275228907,
+        "rawEndTime": 1596275234555
+    },
+    {
+        "transactionName": "Sign_Off",
+        "rawStartTime": 1596275234795,
+        "rawEndTime": 1596275240114
+    },
+    {
+        "transactionName": "03_Cancel_First_Flight",
+        "rawStartTime": 1596275206182,
+        "rawEndTime": 1596275240372
+    }
+]
