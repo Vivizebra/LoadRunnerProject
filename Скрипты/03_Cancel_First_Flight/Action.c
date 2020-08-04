@@ -179,6 +179,7 @@ Action()
 		
 	lr_start_transaction("Get_ID_To_Compare");
     web_reg_save_param ("compIDAfterDelete","LB= name=\"flightID\" value=\"","RB=-", LAST);
+   /* web_reg_find("Text={compIDToDelete}","SaveCount=IDCheck","Fail=Found",LAST);*/
 	web_revert_auto_header("Sec-Fetch-User");
 
 	web_add_auto_header("Upgrade-Insecure-Requests", 

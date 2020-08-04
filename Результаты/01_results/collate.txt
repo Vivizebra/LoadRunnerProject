@@ -1,0 +1,5 @@
+[Diagnostics]
+Status=-1
+[Collate Recovery]
+Scenario=D:\GitHubLocal\LoadRunnerProject\Scenarios\01_Otladochnii_Test.lrs
+Completed=0

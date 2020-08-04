@@ -51,7 +51,7 @@ vuser_init=cci
 Action=cci
 vuser_end=cci
 [TransactionsOrder]
-Order="04_Delete_flight_and_book_another__*delimiter*__WebTours__*delimiter*__Login__*delimiter*__Select_Itinerary__*delimiter*__Cancel_First__*delimiter*__Get_ID__*delimiter*__Select_Flights__*delimiter*__Flight_Search__*delimiter*__Flight_Selection__*delimiter*__Payment_Data__*delimiter*__Select_Itinerary__*delimiter*__Sign_Off__*delimiter*__Cancel_First__*delimiter*__Confirm_Deletion__*delimiter*__Get_ID_To_Compare"
+Order="04_Delete_flight_and_book_another__*delimiter*__WebTours__*delimiter*__Login__*delimiter*__Select_Itinerary__*delimiter*__Get_ID__*delimiter*__Cancel_First__*delimiter*__Cancel_First__*delimiter*__Confirm_Deletion__*delimiter*__Get_ID_To_Compare__*delimiter*__Select_Flights__*delimiter*__Flight_Search__*delimiter*__Flight_Selection__*delimiter*__Payment_Data__*delimiter*__Select_Itinerary__*delimiter*__Sign_Off"
 [StateManagement]
 LastReplayStatus=1
 [ActiveReplay]
@@ -62,12 +62,12 @@ ActiveRunName=result1
 WebTours=
 Login=
 Select_Itinerary=
-Cancel_First=
 Get_ID=
+Cancel_First=
+Confirm_Deletion=
+Get_ID_To_Compare=
 Select_Flights=
 Flight_Search=
 Flight_Selection=
 Payment_Data=
 Sign_Off=
-Confirm_Deletion=
-Get_ID_To_Compare=

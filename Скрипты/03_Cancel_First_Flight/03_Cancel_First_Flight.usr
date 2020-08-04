@@ -51,7 +51,7 @@ vuser_init=cci
 Action=cci
 vuser_end=cci
 [TransactionsOrder]
-Order="03_Cancel_First_Flight__*delimiter*__WebTours__*delimiter*__Login__*delimiter*__Select_Itinerary__*delimiter*__Cancel_First__*delimiter*__Sign_Off__*delimiter*__Cancel_First__*delimiter*__Get_ID__*delimiter*__Confirm_Deletion__*delimiter*__Get_ID_To_Compare"
+Order="03_Cancel_First_Flight__*delimiter*__WebTours__*delimiter*__Login__*delimiter*__Select_Itinerary__*delimiter*__Get_ID__*delimiter*__Cancel_First__*delimiter*__Cancel_First__*delimiter*__Confirm_Deletion__*delimiter*__Get_ID_To_Compare__*delimiter*__Sign_Off"
 [StateManagement]
 LastReplayStatus=1
 [ActiveReplay]
@@ -62,8 +62,8 @@ ActiveRunName=result1
 WebTours=
 Login=
 Select_Itinerary=
-Cancel_First=
-Sign_Off=
 Get_ID=
+Cancel_First=
 Confirm_Deletion=
 Get_ID_To_Compare=
+Sign_Off=

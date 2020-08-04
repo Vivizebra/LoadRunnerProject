@@ -1,0 +1,18 @@
+[Graph definition]
+count=1
+GraphTitle=Avg. Disk sec/Read (LogicalDisk _Total)
+DataPointLabel_1=offline_datapoint_7
+LineTitle_1=DESKTOP-IRQVNLK
+LineGroup_1=0
+YAxisTitle=Avg. Disk sec/Read (LogicalDisk _Total)
+GraphGroupMenuTitle=Windows Resources
+XAxisTitle=Elapsed Scenario Time (seconds)
+XAxisIsElapsedTime=TRUE
+LineType=NOSTEP
+BuildUnderLoadGraph=TRUE
+AggregateFunction=AVG
+MissingData=PREVIOUS
+GranularityMode=NOTINCLUDEZERO
+NoDataBehavior=RemoveGraph
+GraphType=es_rm_svr_res_nt
+DataPointDescr_1=Avg. Disk sec/Read is the average time, in seconds, of a read of data from the disk.

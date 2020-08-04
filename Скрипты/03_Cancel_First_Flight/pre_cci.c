@@ -2737,7 +2737,7 @@ Action()
 		"Resource=0", 
 		"RecContentType=text/html", 
 		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home", 
-		"Snapshot=t3.inf", 
+		"Snapshot=t4.inf", 
 		"Mode=HTML", 
 		"LAST");
 	
@@ -2754,7 +2754,7 @@ Action()
 	lr_think_time(141);
 
 	web_submit_form("itinerary.pl", 
-		"Snapshot=t4.inf", 
+		"Snapshot=t5.inf", 
 		"ITEMDATA", 
 		"Name=1", "Value=on", "ENDITEM", 
 		"Name=removeFlights.x", "Value=20", "ENDITEM", 
@@ -2774,6 +2774,7 @@ Action()
 		
 	lr_start_transaction("Get_ID_To_Compare");
     web_reg_save_param ("compIDAfterDelete","LB= name=\"flightID\" value=\"","RB=-", "LAST");
+    
 	(web_remove_auto_header("Sec-Fetch-User", "ImplicitGen=Yes", "LAST"));
 
 	web_add_auto_header("Upgrade-Insecure-Requests", 
@@ -2787,7 +2788,7 @@ Action()
 		"Resource=0", 
 		"RecContentType=text/html", 
 		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home", 
-		"Snapshot=t3.inf", 
+		"Snapshot=t6.inf", 
 		"Mode=HTML", 
 		"LAST");
 	lr_end_transaction("Get_ID_To_Compare",2);
@@ -2819,7 +2820,7 @@ Action()
 		"Resource=0", 
 		"RecContentType=text/html", 
 		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary", 
-		"Snapshot=t5.inf", 
+		"Snapshot=t7.inf", 
 		"Mode=HTML", 
 		"LAST");
 

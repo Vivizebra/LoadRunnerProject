@@ -1,0 +1,6 @@
+Start auto log messages stack.	[MsgId: MMSG-10546]
+Ending iteration 12.	[MsgId: MMSG-15965]
+Waiting 62.7060 seconds for iteration pacing.	[MsgId: MMSG-15996]
+Starting iteration 13.	[MsgId: MMSG-15968]
+Error: (0, 11)	[MsgId: MERR-13874]
+Error: Parameter 'expPar': Cannot replace the parameter with a value from table 'expPar.dat' [column=0, row=11].	[MsgId: MERR-13888]

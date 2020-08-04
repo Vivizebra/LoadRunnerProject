@@ -1,4 +1,4 @@
-Virtual User Script started at: 01/08/2020 12:44:04
+Virtual User Script started at: 04/08/2020 02:36:26
 Starting action vuser_init.
 Web Turbo Replay of LoadRunner 12.55.0 for Windows 10; build 911 (Jul 24 2017 19:46:00)  	[MsgId: MMSG-26983]
 Run mode: HTML  	[MsgId: MMSG-26993]
@@ -34,8 +34,168 @@ Action.c(25): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?in=hom
 Action.c(25): Detected non-resource "http://localhost:1080/WebTours/home.html" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=true"  	[MsgId: MMSG-26574]
 Action.c(25): Found resource "http://localhost:1080/WebTours/images/mer_login.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?in=home"  	[MsgId: MMSG-26659]
 Action.c(25): Registered web_reg_find successful for "Text=enter your account" (count=1)  	[MsgId: MMSG-26364]
-Action.c(25): web_url("WebTours") was successful, 10080 body bytes, 2371 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(38): Notify: Transaction "WebTours" ended with a "Pass" status (Duration: 0.3546 Wasted Time: 0.0889).
+Action.c(25): web_url("WebTours") was successful, 10076 body bytes, 2371 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(38): Notify: Transaction "WebTours" ended with a "Pass" status (Duration: 0.3353 Wasted Time: 0.0868).
+Action.c(46): Notify: Transaction "Login" started.
+Action.c(48): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(48): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(50): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(50): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(53): web_remove_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(53): Previous automatically added web header for "Upgrade-Insecure-Requests" removed  	[MsgId: MMSG-26587]
+Action.c(53): web_remove/revert_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(55): web_add_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(55): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(58): web_add_auto_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
+Action.c(58): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(61): web_add_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(61): web_add_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(64): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(64): lr_think_time: 5.00 seconds (recorded think time was 40.00 seconds).
+Action.c(66): web_submit_data("login.pl") started  	[MsgId: MMSG-26355]
+Action.c(66): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home" in "http://localhost:1080/cgi-bin/login.pl"  	[MsgId: MMSG-26574]
+Action.c(66): Detected non-resource "http://localhost:1080/cgi-bin/login.pl?intro=true" in "http://localhost:1080/cgi-bin/login.pl"  	[MsgId: MMSG-26574]
+Action.c(66): Found resource "http://localhost:1080/WebTours/images/flights.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+Action.c(66): Found resource "http://localhost:1080/WebTours/images/itinerary.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+Action.c(66): Found resource "http://localhost:1080/WebTours/images/in_home.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+Action.c(66): Found resource "http://localhost:1080/WebTours/images/signoff.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+Action.c(66): Registered web_reg_find successful for "Text=you can search" (count=1)  	[MsgId: MMSG-26364]
+Action.c(66): web_submit_data("login.pl") was successful, 5779 body bytes, 2035 header bytes, 36 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(86): Notify: Transaction "Login" ended with a "Pass" status (Duration: 5.2990 Think Time: 4.9998 Wasted Time: 0.0074).
+Action.c(94): Notify: Transaction "Select_Itinerary" started.
+Action.c(96): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(96): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(97): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(97): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(99): web_remove_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(99): Previous automatically added web header for "Sec-Fetch-User" removed  	[MsgId: MMSG-26587]
+Action.c(99): web_remove/revert_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(101): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(101): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(104): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(104): lr_think_time: 5.00 seconds (recorded think time was 27.00 seconds).
+Action.c(106): web_url("Itinerary Button") started  	[MsgId: MMSG-26355]
+Action.c(106): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(106): Detected non-resource "http://localhost:1080/cgi-bin/itinerary.pl" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(106): Resource "http://localhost:1080/WebTours/images/flights.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(106): Found resource "http://localhost:1080/WebTours/images/in_itinerary.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary"  	[MsgId: MMSG-26659]
+Action.c(106): Found resource "http://localhost:1080/WebTours/images/home.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary"  	[MsgId: MMSG-26659]
+Action.c(106): Resource "http://localhost:1080/WebTours/images/signoff.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(106): Found resource "http://localhost:1080/WebTours/images/cancelreservation.gif" in HTML "http://localhost:1080/cgi-bin/itinerary.pl"  	[MsgId: MMSG-26659]
+Action.c(106): Found resource "http://localhost:1080/WebTours/images/cancelallreservations.gif" in HTML "http://localhost:1080/cgi-bin/itinerary.pl"  	[MsgId: MMSG-26659]
+Action.c(106): Registered web_reg_find successful for "Text=Itinerary" (count=3)  	[MsgId: MMSG-26364]
+Action.c(106): Registered web_reg_find successful for "Text=No flights have been reserved"  	[MsgId: MMSG-26362]
+Action.c(106): web_url("Itinerary Button") was successful, 26893 body bytes, 1917 header bytes, 37 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(119): Notify: Transaction "Select_Itinerary" ended with a "Pass" status (Duration: 5.4059 Think Time: 4.9993 Wasted Time: 0.0061).
+Action.c(130): Notify: Transaction "Get_ID" started.
+Action.c(131): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(131): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(132): web_remove_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(132): Warning -26590: web_remove/revert_auto_header for "Sec-Fetch-User" had no effect  	[MsgId: MWAR-26590]
+Action.c(132): web_remove/revert_auto_header("Sec-Fetch-User") highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(134): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(134): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(137): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(137): lr_think_time: 5.00 seconds (recorded think time was 27.00 seconds).
+Action.c(139): web_url("Itinerary Button") started  	[MsgId: MMSG-26355]
+Action.c(139): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(139): Detected non-resource "http://localhost:1080/cgi-bin/itinerary.pl" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/flights.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/in_itinerary.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/home.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/signoff.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/cancelreservation.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/cancelallreservations.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): web_url("Itinerary Button") was successful, 23899 body bytes, 728 header bytes, 37 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(149): Notify: Transaction "Get_ID" ended with a "Pass" status (Duration: 5.3514 Think Time: 4.9998 Wasted Time: 0.0053).
+Action.c(151): Notify: Transaction "Cancel_First" started.
+Action.c(152): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(152): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(153): web_add_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(153): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(156): web_add_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(156): web_add_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(159): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(159): lr_think_time: 5.00 seconds (recorded think time was 141.00 seconds).
+Action.c(161): web_submit_form("itinerary.pl") started  	[MsgId: MMSG-26355]
+Action.c(161): Submitting form to "http://localhost:1080/cgi-bin/itinerary.pl", Target Frame=""  	[MsgId: MMSG-27978]
+Action.c(161): Resource "http://localhost:1080/WebTours/images/cancelreservation.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(161): Resource "http://localhost:1080/WebTours/images/cancelallreservations.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(161): Registered web_reg_find successful for "Text=No flights have been reserved"  	[MsgId: MMSG-26362]
+Action.c(161): web_submit_form("itinerary.pl") was successful, 20690 body bytes, 256 header bytes, 13 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(168): Notify: Transaction "Cancel_First" ended with a "Pass" status (Duration: 5.2885 Think Time: 5.0001 Wasted Time: 0.0045).
+Action.c(176): Notify: Transaction "Confirm_Deletion" started.
+Action.c(180): Notify: Transaction "Get_ID_To_Compare" started.
+Action.c(182): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(182): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(183): web_remove_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(183): Previous automatically added web header for "Sec-Fetch-User" removed  	[MsgId: MMSG-26587]
+Action.c(183): web_remove/revert_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(185): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(185): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(188): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(188): lr_think_time: 5.00 seconds (recorded think time was 27.00 seconds).
+Action.c(190): web_url("Itinerary Button") started  	[MsgId: MMSG-26355]
+Action.c(190): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(190): Detected non-resource "http://localhost:1080/cgi-bin/itinerary.pl" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/flights.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/in_itinerary.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/home.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/signoff.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/cancelreservation.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/cancelallreservations.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Registered web_reg_find successful for "Text=323914464"  	[MsgId: MMSG-26362]
+Action.c(190): web_url("Itinerary Button") was successful, 22763 body bytes, 728 header bytes, 37 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(199): Notify: Transaction "Get_ID_To_Compare" ended with a "Pass" status (Duration: 5.3176 Think Time: 4.9998 Wasted Time: 0.0048).
+Action.c(202): Notify: Transaction "Confirm_Deletion" ended with a "Pass" status (Duration: 5.6552 Think Time: 4.9998 Wasted Time: 0.0048).
+Action.c(214): Notify: Transaction "Sign_Off" started.
+Action.c(216): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(216): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(218): web_remove_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(218): Warning -26590: web_remove/revert_auto_header for "Sec-Fetch-User" had no effect  	[MsgId: MWAR-26590]
+Action.c(218): web_remove/revert_auto_header("Sec-Fetch-User") highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(220): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(220): lr_think_time: 5.00 seconds (recorded think time was 19.00 seconds).
+Action.c(222): web_url("SignOff Button") started  	[MsgId: MMSG-26355]
+Action.c(222): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?in=home" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=1"  	[MsgId: MMSG-26574]
+Action.c(222): Detected non-resource "http://localhost:1080/WebTours/home.html" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=1"  	[MsgId: MMSG-26574]
+Action.c(222): Retrieving data from cache for "http://localhost:1080/WebTours/home.html"  	[MsgId: MMSG-26558]
+Action.c(222): Resource "http://localhost:1080/WebTours/images/mer_login.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(222): Registered web_reg_find successful for "Text=enter your account" (count=1)  	[MsgId: MMSG-26364]
+Action.c(222): web_url("SignOff Button") was successful, 2176 body bytes, 584 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(235): Notify: Transaction "Sign_Off" ended with a "Pass" status (Duration: 5.3430 Think Time: 5.0008 Wasted Time: 0.0046).
+Action.c(243): Notify: Transaction "03_Cancel_First_Flight" ended with a "Pass" status (Duration: 34.2338 Think Time: 29.9995 Wasted Time: 0.1194).
+Ending action Action.
+Ending iteration 1.
+Starting iteration 2.
+Starting action Action.
+Action.c(4): Notify: Transaction "03_Cancel_First_Flight" started.
+Action.c(6): Notify: Transaction "WebTours" started.
+Action.c(8): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(8): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(9): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(9): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(11): web_set_sockets_option started  	[MsgId: MMSG-26355]
+Action.c(11): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
+Action.c(13): web_add_auto_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
+Action.c(13): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(16): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(16): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(19): web_add_auto_header("Sec-Fetch-Mode") started  	[MsgId: MMSG-26355]
+Action.c(19): web_add_auto_header("Sec-Fetch-Mode") was successful  	[MsgId: MMSG-26392]
+Action.c(22): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(22): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(25): web_url("WebTours") started  	[MsgId: MMSG-26355]
+Action.c(25): Detected non-resource "http://localhost:1080/WebTours/header.html" in "http://localhost:1080/WebTours/"  	[MsgId: MMSG-26574]
+Action.c(25): Detected non-resource "http://localhost:1080/cgi-bin/welcome.pl?signOff=true" in "http://localhost:1080/WebTours/"  	[MsgId: MMSG-26574]
+Action.c(25): Found resource "http://localhost:1080/WebTours/images/hp_logo.png" in HTML "http://localhost:1080/WebTours/header.html"  	[MsgId: MMSG-26659]
+Action.c(25): Found resource "http://localhost:1080/WebTours/images/webtours.png" in HTML "http://localhost:1080/WebTours/header.html"  	[MsgId: MMSG-26659]
+Action.c(25): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?in=home" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=true"  	[MsgId: MMSG-26574]
+Action.c(25): Detected non-resource "http://localhost:1080/WebTours/home.html" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=true"  	[MsgId: MMSG-26574]
+Action.c(25): Found resource "http://localhost:1080/WebTours/images/mer_login.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?in=home"  	[MsgId: MMSG-26659]
+Action.c(25): Registered web_reg_find successful for "Text=enter your account" (count=1)  	[MsgId: MMSG-26364]
+Action.c(25): web_url("WebTours") was successful, 10076 body bytes, 2371 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(38): Notify: Transaction "WebTours" ended with a "Pass" status (Duration: 0.2455 Wasted Time: 0.0093).
 Action.c(46): Notify: Transaction "Login" started.
 Action.c(48): web_reg_find started  	[MsgId: MMSG-26355]
 Action.c(48): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
@@ -61,7 +221,7 @@ Action.c(66): Found resource "http://localhost:1080/WebTours/images/in_home.gif"
 Action.c(66): Found resource "http://localhost:1080/WebTours/images/signoff.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
 Action.c(66): Registered web_reg_find successful for "Text=you can search" (count=1)  	[MsgId: MMSG-26364]
 Action.c(66): web_submit_data("login.pl") was successful, 5780 body bytes, 2050 header bytes, 36 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(86): Notify: Transaction "Login" ended with a "Pass" status (Duration: 5.3248 Think Time: 5.0004 Wasted Time: 0.0077).
+Action.c(86): Notify: Transaction "Login" ended with a "Pass" status (Duration: 5.3588 Think Time: 4.9995 Wasted Time: 0.0085).
 Action.c(94): Notify: Transaction "Select_Itinerary" started.
 Action.c(96): web_reg_find started  	[MsgId: MMSG-26355]
 Action.c(96): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
@@ -85,8 +245,8 @@ Action.c(106): Found resource "http://localhost:1080/WebTours/images/cancelreser
 Action.c(106): Found resource "http://localhost:1080/WebTours/images/cancelallreservations.gif" in HTML "http://localhost:1080/cgi-bin/itinerary.pl"  	[MsgId: MMSG-26659]
 Action.c(106): Registered web_reg_find successful for "Text=Itinerary" (count=3)  	[MsgId: MMSG-26364]
 Action.c(106): Registered web_reg_find successful for "Text=No flights have been reserved"  	[MsgId: MMSG-26362]
-Action.c(106): web_url("Itinerary Button") was successful, 9960 body bytes, 1917 header bytes, 37 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(119): Notify: Transaction "Select_Itinerary" ended with a "Pass" status (Duration: 5.3569 Think Time: 5.0004 Wasted Time: 0.0092).
+Action.c(106): web_url("Itinerary Button") was successful, 20074 body bytes, 1918 header bytes, 37 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(119): Notify: Transaction "Select_Itinerary" ended with a "Pass" status (Duration: 5.3826 Think Time: 4.9994 Wasted Time: 0.0088).
 Action.c(130): Notify: Transaction "Get_ID" started.
 Action.c(131): web_reg_save_param started  	[MsgId: MMSG-26355]
 Action.c(131): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
@@ -106,8 +266,8 @@ Action.c(139): Resource "http://localhost:1080/WebTours/images/home.gif" is in t
 Action.c(139): Resource "http://localhost:1080/WebTours/images/signoff.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
 Action.c(139): Resource "http://localhost:1080/WebTours/images/cancelreservation.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
 Action.c(139): Resource "http://localhost:1080/WebTours/images/cancelallreservations.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
-Action.c(139): web_url("Itinerary Button") was successful, 6966 body bytes, 728 header bytes, 37 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(149): Notify: Transaction "Get_ID" ended with a "Pass" status (Duration: 5.3069 Think Time: 5.0001 Wasted Time: 0.0051).
+Action.c(139): web_url("Itinerary Button") was successful, 17080 body bytes, 728 header bytes, 37 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(149): Notify: Transaction "Get_ID" ended with a "Pass" status (Duration: 5.3353 Think Time: 4.9992 Wasted Time: 0.0079).
 Action.c(151): Notify: Transaction "Cancel_First" started.
 Action.c(152): web_reg_find started  	[MsgId: MMSG-26355]
 Action.c(152): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
@@ -122,50 +282,1321 @@ Action.c(161): Submitting form to "http://localhost:1080/cgi-bin/itinerary.pl", 
 Action.c(161): Resource "http://localhost:1080/WebTours/images/cancelreservation.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
 Action.c(161): Resource "http://localhost:1080/WebTours/images/cancelallreservations.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
 Action.c(161): Registered web_reg_find successful for "Text=No flights have been reserved"  	[MsgId: MMSG-26362]
-Action.c(161): web_submit_form("itinerary.pl") was successful, 3757 body bytes, 256 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(168): Notify: Transaction "Cancel_First" ended with a "Pass" status (Duration: 5.2635 Think Time: 4.9999 Wasted Time: 0.0042).
+Action.c(161): web_submit_form("itinerary.pl") was successful, 13884 body bytes, 256 header bytes, 13 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(168): Notify: Transaction "Cancel_First" ended with a "Pass" status (Duration: 5.2875 Think Time: 5.0000 Wasted Time: 0.0083).
 Action.c(176): Notify: Transaction "Confirm_Deletion" started.
 Action.c(180): Notify: Transaction "Get_ID_To_Compare" started.
-Action.c(181): web_reg_save_param started  	[MsgId: MMSG-26355]
-Action.c(181): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
-Action.c(182): web_remove_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
-Action.c(182): Previous automatically added web header for "Sec-Fetch-User" removed  	[MsgId: MMSG-26587]
-Action.c(182): web_remove/revert_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
-Action.c(184): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
-Action.c(184): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
-Action.c(187): Think time - Waiting 5.00 seconds (according to limit).
-Action.c(187): lr_think_time: 5.00 seconds (recorded think time was 27.00 seconds).
-Action.c(189): web_url("Itinerary Button") started  	[MsgId: MMSG-26355]
-Action.c(189): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
-Action.c(189): Detected non-resource "http://localhost:1080/cgi-bin/itinerary.pl" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
-Action.c(189): Resource "http://localhost:1080/WebTours/images/flights.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
-Action.c(189): Resource "http://localhost:1080/WebTours/images/in_itinerary.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
-Action.c(189): Resource "http://localhost:1080/WebTours/images/home.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
-Action.c(189): Resource "http://localhost:1080/WebTours/images/signoff.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
-Action.c(189): Resource "http://localhost:1080/WebTours/images/cancelreservation.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
-Action.c(189): Resource "http://localhost:1080/WebTours/images/cancelallreservations.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
-Action.c(189): web_url("Itinerary Button") was successful, 5830 body bytes, 728 header bytes, 36 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(198): Notify: Transaction "Get_ID_To_Compare" ended with a "Pass" status (Duration: 5.3517 Think Time: 5.0011 Wasted Time: 0.0160).
-Action.c(201): Notify: Transaction "Confirm_Deletion" ended with a "Pass" status (Duration: 5.6809 Think Time: 5.0011 Wasted Time: 0.0160).
-Action.c(213): Notify: Transaction "Sign_Off" started.
-Action.c(215): web_reg_find started  	[MsgId: MMSG-26355]
-Action.c(215): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
-Action.c(217): web_remove_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
-Action.c(217): Warning -26590: web_remove/revert_auto_header for "Sec-Fetch-User" had no effect  	[MsgId: MWAR-26590]
-Action.c(217): web_remove/revert_auto_header("Sec-Fetch-User") highest severity level was "warning"  	[MsgId: MMSG-26391]
-Action.c(219): Think time - Waiting 5.00 seconds (according to limit).
-Action.c(219): lr_think_time: 5.00 seconds (recorded think time was 19.00 seconds).
-Action.c(221): web_url("SignOff Button") started  	[MsgId: MMSG-26355]
-Action.c(221): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?in=home" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=1"  	[MsgId: MMSG-26574]
-Action.c(221): Detected non-resource "http://localhost:1080/WebTours/home.html" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=1"  	[MsgId: MMSG-26574]
-Action.c(221): Retrieving data from cache for "http://localhost:1080/WebTours/home.html"  	[MsgId: MMSG-26558]
-Action.c(221): Resource "http://localhost:1080/WebTours/images/mer_login.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
-Action.c(221): Registered web_reg_find successful for "Text=enter your account" (count=1)  	[MsgId: MMSG-26364]
-Action.c(221): web_url("SignOff Button") was successful, 2175 body bytes, 584 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
-Action.c(234): Notify: Transaction "Sign_Off" ended with a "Pass" status (Duration: 5.3241 Think Time: 5.0005 Wasted Time: 0.0049).
-Action.c(242): Notify: Transaction "03_Cancel_First_Flight" ended with a "Pass" status (Duration: 34.1864 Think Time: 30.0024 Wasted Time: 0.1360).
+Action.c(182): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(182): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(183): web_remove_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(183): Previous automatically added web header for "Sec-Fetch-User" removed  	[MsgId: MMSG-26587]
+Action.c(183): web_remove/revert_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(185): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(185): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(188): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(188): lr_think_time: 5.00 seconds (recorded think time was 27.00 seconds).
+Action.c(190): web_url("Itinerary Button") started  	[MsgId: MMSG-26355]
+Action.c(190): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(190): Detected non-resource "http://localhost:1080/cgi-bin/itinerary.pl" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/flights.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/in_itinerary.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/home.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/signoff.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/cancelreservation.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/cancelallreservations.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Registered web_reg_find successful for "Text=36592"  	[MsgId: MMSG-26362]
+Action.c(190): web_url("Itinerary Button") was successful, 15957 body bytes, 728 header bytes, 37 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(199): Notify: Transaction "Get_ID_To_Compare" ended with a "Pass" status (Duration: 5.3437 Think Time: 5.0001 Wasted Time: 0.0076).
+Action.c(202): Notify: Transaction "Confirm_Deletion" ended with a "Pass" status (Duration: 5.6516 Think Time: 5.0001 Wasted Time: 0.0076).
+Action.c(214): Notify: Transaction "Sign_Off" started.
+Action.c(216): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(216): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(218): web_remove_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(218): Warning -26590: web_remove/revert_auto_header for "Sec-Fetch-User" had no effect  	[MsgId: MWAR-26590]
+Action.c(218): web_remove/revert_auto_header("Sec-Fetch-User") highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(220): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(220): lr_think_time: 5.00 seconds (recorded think time was 19.00 seconds).
+Action.c(222): web_url("SignOff Button") started  	[MsgId: MMSG-26355]
+Action.c(222): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?in=home" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=1"  	[MsgId: MMSG-26574]
+Action.c(222): Detected non-resource "http://localhost:1080/WebTours/home.html" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=1"  	[MsgId: MMSG-26574]
+Action.c(222): Retrieving data from cache for "http://localhost:1080/WebTours/home.html"  	[MsgId: MMSG-26558]
+Action.c(222): Resource "http://localhost:1080/WebTours/images/mer_login.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(222): Registered web_reg_find successful for "Text=enter your account" (count=1)  	[MsgId: MMSG-26364]
+Action.c(222): web_url("SignOff Button") was successful, 2167 body bytes, 584 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(235): Notify: Transaction "Sign_Off" ended with a "Pass" status (Duration: 5.3679 Think Time: 5.0003 Wasted Time: 0.0072).
+Action.c(243): Notify: Transaction "03_Cancel_First_Flight" ended with a "Pass" status (Duration: 34.1766 Think Time: 29.9985 Wasted Time: 0.0577).
 Ending action Action.
-Ending iteration 1.
+Ending iteration 2.
+Starting iteration 3.
+Starting action Action.
+Action.c(4): Notify: Transaction "03_Cancel_First_Flight" started.
+Action.c(6): Notify: Transaction "WebTours" started.
+Action.c(8): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(8): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(9): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(9): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(11): web_set_sockets_option started  	[MsgId: MMSG-26355]
+Action.c(11): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
+Action.c(13): web_add_auto_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
+Action.c(13): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(16): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(16): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(19): web_add_auto_header("Sec-Fetch-Mode") started  	[MsgId: MMSG-26355]
+Action.c(19): web_add_auto_header("Sec-Fetch-Mode") was successful  	[MsgId: MMSG-26392]
+Action.c(22): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(22): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(25): web_url("WebTours") started  	[MsgId: MMSG-26355]
+Action.c(25): Detected non-resource "http://localhost:1080/WebTours/header.html" in "http://localhost:1080/WebTours/"  	[MsgId: MMSG-26574]
+Action.c(25): Detected non-resource "http://localhost:1080/cgi-bin/welcome.pl?signOff=true" in "http://localhost:1080/WebTours/"  	[MsgId: MMSG-26574]
+Action.c(25): Found resource "http://localhost:1080/WebTours/images/hp_logo.png" in HTML "http://localhost:1080/WebTours/header.html"  	[MsgId: MMSG-26659]
+Action.c(25): Found resource "http://localhost:1080/WebTours/images/webtours.png" in HTML "http://localhost:1080/WebTours/header.html"  	[MsgId: MMSG-26659]
+Action.c(25): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?in=home" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=true"  	[MsgId: MMSG-26574]
+Action.c(25): Detected non-resource "http://localhost:1080/WebTours/home.html" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=true"  	[MsgId: MMSG-26574]
+Action.c(25): Found resource "http://localhost:1080/WebTours/images/mer_login.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?in=home"  	[MsgId: MMSG-26659]
+Action.c(25): Registered web_reg_find successful for "Text=enter your account" (count=1)  	[MsgId: MMSG-26364]
+Action.c(25): web_url("WebTours") was successful, 10080 body bytes, 2371 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(38): Notify: Transaction "WebTours" ended with a "Pass" status (Duration: 0.2904 Wasted Time: 0.0119).
+Action.c(46): Notify: Transaction "Login" started.
+Action.c(48): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(48): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(50): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(50): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(53): web_remove_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(53): Previous automatically added web header for "Upgrade-Insecure-Requests" removed  	[MsgId: MMSG-26587]
+Action.c(53): web_remove/revert_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(55): web_add_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(55): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(58): web_add_auto_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
+Action.c(58): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(61): web_add_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(61): web_add_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(64): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(64): lr_think_time: 5.00 seconds (recorded think time was 40.00 seconds).
+Action.c(66): web_submit_data("login.pl") started  	[MsgId: MMSG-26355]
+Action.c(66): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home" in "http://localhost:1080/cgi-bin/login.pl"  	[MsgId: MMSG-26574]
+Action.c(66): Detected non-resource "http://localhost:1080/cgi-bin/login.pl?intro=true" in "http://localhost:1080/cgi-bin/login.pl"  	[MsgId: MMSG-26574]
+Action.c(66): Found resource "http://localhost:1080/WebTours/images/flights.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+Action.c(66): Found resource "http://localhost:1080/WebTours/images/itinerary.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+Action.c(66): Found resource "http://localhost:1080/WebTours/images/in_home.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+Action.c(66): Found resource "http://localhost:1080/WebTours/images/signoff.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+Action.c(66): Registered web_reg_find successful for "Text=you can search" (count=1)  	[MsgId: MMSG-26364]
+Action.c(66): web_submit_data("login.pl") was successful, 5780 body bytes, 2050 header bytes, 36 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(86): Notify: Transaction "Login" ended with a "Pass" status (Duration: 5.3386 Think Time: 5.0002 Wasted Time: 0.0117).
+Action.c(94): Notify: Transaction "Select_Itinerary" started.
+Action.c(96): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(96): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(97): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(97): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(99): web_remove_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(99): Previous automatically added web header for "Sec-Fetch-User" removed  	[MsgId: MMSG-26587]
+Action.c(99): web_remove/revert_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(101): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(101): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(104): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(104): lr_think_time: 5.00 seconds (recorded think time was 27.00 seconds).
+Action.c(106): web_url("Itinerary Button") started  	[MsgId: MMSG-26355]
+Action.c(106): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(106): Detected non-resource "http://localhost:1080/cgi-bin/itinerary.pl" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(106): Resource "http://localhost:1080/WebTours/images/flights.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(106): Found resource "http://localhost:1080/WebTours/images/in_itinerary.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary"  	[MsgId: MMSG-26659]
+Action.c(106): Found resource "http://localhost:1080/WebTours/images/home.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary"  	[MsgId: MMSG-26659]
+Action.c(106): Resource "http://localhost:1080/WebTours/images/signoff.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(106): Found resource "http://localhost:1080/WebTours/images/cancelreservation.gif" in HTML "http://localhost:1080/cgi-bin/itinerary.pl"  	[MsgId: MMSG-26659]
+Action.c(106): Found resource "http://localhost:1080/WebTours/images/cancelallreservations.gif" in HTML "http://localhost:1080/cgi-bin/itinerary.pl"  	[MsgId: MMSG-26659]
+Action.c(106): Registered web_reg_find successful for "Text=Itinerary" (count=3)  	[MsgId: MMSG-26364]
+Action.c(106): Registered web_reg_find successful for "Text=No flights have been reserved"  	[MsgId: MMSG-26362]
+Action.c(106): web_url("Itinerary Button") was successful, 22389 body bytes, 1918 header bytes, 37 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(119): Notify: Transaction "Select_Itinerary" ended with a "Pass" status (Duration: 5.3758 Think Time: 5.0007 Wasted Time: 0.0119).
+Action.c(130): Notify: Transaction "Get_ID" started.
+Action.c(131): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(131): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(132): web_remove_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(132): Warning -26590: web_remove/revert_auto_header for "Sec-Fetch-User" had no effect  	[MsgId: MWAR-26590]
+Action.c(132): web_remove/revert_auto_header("Sec-Fetch-User") highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(134): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(134): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(137): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(137): lr_think_time: 5.00 seconds (recorded think time was 27.00 seconds).
+Action.c(139): web_url("Itinerary Button") started  	[MsgId: MMSG-26355]
+Action.c(139): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(139): Detected non-resource "http://localhost:1080/cgi-bin/itinerary.pl" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/flights.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/in_itinerary.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/home.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/signoff.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/cancelreservation.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/cancelallreservations.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): web_url("Itinerary Button") was successful, 19395 body bytes, 728 header bytes, 37 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(149): Notify: Transaction "Get_ID" ended with a "Pass" status (Duration: 5.4493 Think Time: 5.0002 Wasted Time: 0.1305).
+Action.c(151): Notify: Transaction "Cancel_First" started.
+Action.c(152): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(152): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(153): web_add_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(153): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(156): web_add_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(156): web_add_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(159): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(159): lr_think_time: 5.00 seconds (recorded think time was 141.00 seconds).
+Action.c(161): web_submit_form("itinerary.pl") started  	[MsgId: MMSG-26355]
+Action.c(161): Submitting form to "http://localhost:1080/cgi-bin/itinerary.pl", Target Frame=""  	[MsgId: MMSG-27978]
+Action.c(161): Resource "http://localhost:1080/WebTours/images/cancelreservation.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(161): Resource "http://localhost:1080/WebTours/images/cancelallreservations.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(161): Registered web_reg_find successful for "Text=No flights have been reserved"  	[MsgId: MMSG-26362]
+Action.c(161): web_submit_form("itinerary.pl") was successful, 16188 body bytes, 256 header bytes, 13 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(168): Notify: Transaction "Cancel_First" ended with a "Pass" status (Duration: 5.2344 Think Time: 5.0001 Wasted Time: 0.0095).
+Action.c(176): Notify: Transaction "Confirm_Deletion" started.
+Action.c(180): Notify: Transaction "Get_ID_To_Compare" started.
+Action.c(182): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(182): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(183): web_remove_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(183): Previous automatically added web header for "Sec-Fetch-User" removed  	[MsgId: MMSG-26587]
+Action.c(183): web_remove/revert_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(185): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(185): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(188): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(188): lr_think_time: 5.00 seconds (recorded think time was 27.00 seconds).
+Action.c(190): web_url("Itinerary Button") started  	[MsgId: MMSG-26355]
+Action.c(190): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(190): Detected non-resource "http://localhost:1080/cgi-bin/itinerary.pl" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/flights.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/in_itinerary.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/home.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/signoff.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/cancelreservation.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/cancelallreservations.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Registered web_reg_find successful for "Text=277747064"  	[MsgId: MMSG-26362]
+Action.c(190): web_url("Itinerary Button") was successful, 18261 body bytes, 728 header bytes, 37 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(199): Notify: Transaction "Get_ID_To_Compare" ended with a "Pass" status (Duration: 5.3338 Think Time: 5.0005 Wasted Time: 0.0104).
+Action.c(202): Notify: Transaction "Confirm_Deletion" ended with a "Pass" status (Duration: 5.6467 Think Time: 5.0005 Wasted Time: 0.0104).
+Action.c(214): Notify: Transaction "Sign_Off" started.
+Action.c(216): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(216): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(218): web_remove_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(218): Warning -26590: web_remove/revert_auto_header for "Sec-Fetch-User" had no effect  	[MsgId: MWAR-26590]
+Action.c(218): web_remove/revert_auto_header("Sec-Fetch-User") highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(220): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(220): lr_think_time: 5.00 seconds (recorded think time was 19.00 seconds).
+Action.c(222): web_url("SignOff Button") started  	[MsgId: MMSG-26355]
+Action.c(222): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?in=home" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=1"  	[MsgId: MMSG-26574]
+Action.c(222): Detected non-resource "http://localhost:1080/WebTours/home.html" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=1"  	[MsgId: MMSG-26574]
+Action.c(222): Retrieving data from cache for "http://localhost:1080/WebTours/home.html"  	[MsgId: MMSG-26558]
+Action.c(222): Resource "http://localhost:1080/WebTours/images/mer_login.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(222): Registered web_reg_find successful for "Text=enter your account" (count=1)  	[MsgId: MMSG-26364]
+Action.c(222): web_url("SignOff Button") was successful, 2176 body bytes, 584 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(235): Notify: Transaction "Sign_Off" ended with a "Pass" status (Duration: 5.3638 Think Time: 5.0008 Wasted Time: 0.0099).
+Action.c(243): Notify: Transaction "03_Cancel_First_Flight" ended with a "Pass" status (Duration: 34.4302 Think Time: 30.0026 Wasted Time: 0.1958).
+Ending action Action.
+Ending iteration 3.
+Starting iteration 4.
+Starting action Action.
+Action.c(4): Notify: Transaction "03_Cancel_First_Flight" started.
+Action.c(6): Notify: Transaction "WebTours" started.
+Action.c(8): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(8): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(9): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(9): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(11): web_set_sockets_option started  	[MsgId: MMSG-26355]
+Action.c(11): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
+Action.c(13): web_add_auto_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
+Action.c(13): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(16): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(16): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(19): web_add_auto_header("Sec-Fetch-Mode") started  	[MsgId: MMSG-26355]
+Action.c(19): web_add_auto_header("Sec-Fetch-Mode") was successful  	[MsgId: MMSG-26392]
+Action.c(22): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(22): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(25): web_url("WebTours") started  	[MsgId: MMSG-26355]
+Action.c(25): Detected non-resource "http://localhost:1080/WebTours/header.html" in "http://localhost:1080/WebTours/"  	[MsgId: MMSG-26574]
+Action.c(25): Detected non-resource "http://localhost:1080/cgi-bin/welcome.pl?signOff=true" in "http://localhost:1080/WebTours/"  	[MsgId: MMSG-26574]
+Action.c(25): Found resource "http://localhost:1080/WebTours/images/hp_logo.png" in HTML "http://localhost:1080/WebTours/header.html"  	[MsgId: MMSG-26659]
+Action.c(25): Found resource "http://localhost:1080/WebTours/images/webtours.png" in HTML "http://localhost:1080/WebTours/header.html"  	[MsgId: MMSG-26659]
+Action.c(25): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?in=home" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=true"  	[MsgId: MMSG-26574]
+Action.c(25): Detected non-resource "http://localhost:1080/WebTours/home.html" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=true"  	[MsgId: MMSG-26574]
+Action.c(25): Found resource "http://localhost:1080/WebTours/images/mer_login.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?in=home"  	[MsgId: MMSG-26659]
+Action.c(25): Registered web_reg_find successful for "Text=enter your account" (count=1)  	[MsgId: MMSG-26364]
+Action.c(25): web_url("WebTours") was successful, 10072 body bytes, 2371 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(38): Notify: Transaction "WebTours" ended with a "Pass" status (Duration: 0.3086 Wasted Time: 0.0150).
+Action.c(46): Notify: Transaction "Login" started.
+Action.c(48): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(48): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(50): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(50): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(53): web_remove_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(53): Previous automatically added web header for "Upgrade-Insecure-Requests" removed  	[MsgId: MMSG-26587]
+Action.c(53): web_remove/revert_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(55): web_add_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(55): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(58): web_add_auto_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
+Action.c(58): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(61): web_add_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(61): web_add_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(64): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(64): lr_think_time: 5.00 seconds (recorded think time was 40.00 seconds).
+Action.c(66): web_submit_data("login.pl") started  	[MsgId: MMSG-26355]
+Action.c(66): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home" in "http://localhost:1080/cgi-bin/login.pl"  	[MsgId: MMSG-26574]
+Action.c(66): Detected non-resource "http://localhost:1080/cgi-bin/login.pl?intro=true" in "http://localhost:1080/cgi-bin/login.pl"  	[MsgId: MMSG-26574]
+Action.c(66): Found resource "http://localhost:1080/WebTours/images/flights.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+Action.c(66): Found resource "http://localhost:1080/WebTours/images/itinerary.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+Action.c(66): Found resource "http://localhost:1080/WebTours/images/in_home.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+Action.c(66): Found resource "http://localhost:1080/WebTours/images/signoff.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+Action.c(66): Registered web_reg_find successful for "Text=you can search" (count=1)  	[MsgId: MMSG-26364]
+Action.c(66): web_submit_data("login.pl") was successful, 5780 body bytes, 2050 header bytes, 36 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(86): Notify: Transaction "Login" ended with a "Pass" status (Duration: 5.3348 Think Time: 4.9999 Wasted Time: 0.0152).
+Action.c(94): Notify: Transaction "Select_Itinerary" started.
+Action.c(96): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(96): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(97): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(97): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(99): web_remove_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(99): Previous automatically added web header for "Sec-Fetch-User" removed  	[MsgId: MMSG-26587]
+Action.c(99): web_remove/revert_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(101): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(101): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(104): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(104): lr_think_time: 5.00 seconds (recorded think time was 27.00 seconds).
+Action.c(106): web_url("Itinerary Button") started  	[MsgId: MMSG-26355]
+Action.c(106): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(106): Detected non-resource "http://localhost:1080/cgi-bin/itinerary.pl" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(106): Resource "http://localhost:1080/WebTours/images/flights.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(106): Found resource "http://localhost:1080/WebTours/images/in_itinerary.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary"  	[MsgId: MMSG-26659]
+Action.c(106): Found resource "http://localhost:1080/WebTours/images/home.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary"  	[MsgId: MMSG-26659]
+Action.c(106): Resource "http://localhost:1080/WebTours/images/signoff.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(106): Found resource "http://localhost:1080/WebTours/images/cancelreservation.gif" in HTML "http://localhost:1080/cgi-bin/itinerary.pl"  	[MsgId: MMSG-26659]
+Action.c(106): Found resource "http://localhost:1080/WebTours/images/cancelallreservations.gif" in HTML "http://localhost:1080/cgi-bin/itinerary.pl"  	[MsgId: MMSG-26659]
+Action.c(106): Registered web_reg_find successful for "Text=Itinerary" (count=3)  	[MsgId: MMSG-26364]
+Action.c(106): Registered web_reg_find successful for "Text=No flights have been reserved"  	[MsgId: MMSG-26362]
+Action.c(106): web_url("Itinerary Button") was successful, 16738 body bytes, 1917 header bytes, 37 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(119): Notify: Transaction "Select_Itinerary" ended with a "Pass" status (Duration: 5.3208 Think Time: 5.0009 Wasted Time: 0.0146).
+Action.c(130): Notify: Transaction "Get_ID" started.
+Action.c(131): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(131): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(132): web_remove_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(132): Warning -26590: web_remove/revert_auto_header for "Sec-Fetch-User" had no effect  	[MsgId: MWAR-26590]
+Action.c(132): web_remove/revert_auto_header("Sec-Fetch-User") highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(134): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(134): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(137): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(137): lr_think_time: 5.00 seconds (recorded think time was 27.00 seconds).
+Action.c(139): web_url("Itinerary Button") started  	[MsgId: MMSG-26355]
+Action.c(139): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(139): Detected non-resource "http://localhost:1080/cgi-bin/itinerary.pl" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/flights.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/in_itinerary.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/home.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/signoff.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/cancelreservation.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/cancelallreservations.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): web_url("Itinerary Button") was successful, 13744 body bytes, 728 header bytes, 37 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(149): Notify: Transaction "Get_ID" ended with a "Pass" status (Duration: 5.3310 Think Time: 5.0005 Wasted Time: 0.0139).
+Action.c(151): Notify: Transaction "Cancel_First" started.
+Action.c(152): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(152): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(153): web_add_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(153): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(156): web_add_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(156): web_add_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(159): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(159): lr_think_time: 5.00 seconds (recorded think time was 141.00 seconds).
+Action.c(161): web_submit_form("itinerary.pl") started  	[MsgId: MMSG-26355]
+Action.c(161): Submitting form to "http://localhost:1080/cgi-bin/itinerary.pl", Target Frame=""  	[MsgId: MMSG-27978]
+Action.c(161): Resource "http://localhost:1080/WebTours/images/cancelreservation.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(161): Resource "http://localhost:1080/WebTours/images/cancelallreservations.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(161): Registered web_reg_find successful for "Text=No flights have been reserved"  	[MsgId: MMSG-26362]
+Action.c(161): web_submit_form("itinerary.pl") was successful, 10544 body bytes, 256 header bytes, 13 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(168): Notify: Transaction "Cancel_First" ended with a "Pass" status (Duration: 5.3146 Think Time: 4.9989 Wasted Time: 0.0128).
+Action.c(176): Notify: Transaction "Confirm_Deletion" started.
+Action.c(180): Notify: Transaction "Get_ID_To_Compare" started.
+Action.c(182): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(182): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(183): web_remove_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(183): Previous automatically added web header for "Sec-Fetch-User" removed  	[MsgId: MMSG-26587]
+Action.c(183): web_remove/revert_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(185): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(185): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(188): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(188): lr_think_time: 5.00 seconds (recorded think time was 27.00 seconds).
+Action.c(190): web_url("Itinerary Button") started  	[MsgId: MMSG-26355]
+Action.c(190): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(190): Detected non-resource "http://localhost:1080/cgi-bin/itinerary.pl" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/flights.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/in_itinerary.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/home.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/signoff.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/cancelreservation.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/cancelallreservations.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Registered web_reg_find successful for "Text=142311486"  	[MsgId: MMSG-26362]
+Action.c(190): web_url("Itinerary Button") was successful, 12617 body bytes, 728 header bytes, 37 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(199): Notify: Transaction "Get_ID_To_Compare" ended with a "Pass" status (Duration: 5.3206 Think Time: 5.0003 Wasted Time: 0.0134).
+Action.c(202): Notify: Transaction "Confirm_Deletion" ended with a "Pass" status (Duration: 5.6351 Think Time: 5.0003 Wasted Time: 0.0134).
+Action.c(214): Notify: Transaction "Sign_Off" started.
+Action.c(216): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(216): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(218): web_remove_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(218): Warning -26590: web_remove/revert_auto_header for "Sec-Fetch-User" had no effect  	[MsgId: MWAR-26590]
+Action.c(218): web_remove/revert_auto_header("Sec-Fetch-User") highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(220): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(220): lr_think_time: 5.00 seconds (recorded think time was 19.00 seconds).
+Action.c(222): web_url("SignOff Button") started  	[MsgId: MMSG-26355]
+Action.c(222): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?in=home" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=1"  	[MsgId: MMSG-26574]
+Action.c(222): Detected non-resource "http://localhost:1080/WebTours/home.html" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=1"  	[MsgId: MMSG-26574]
+Action.c(222): Retrieving data from cache for "http://localhost:1080/WebTours/home.html"  	[MsgId: MMSG-26558]
+Action.c(222): Resource "http://localhost:1080/WebTours/images/mer_login.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(222): Registered web_reg_find successful for "Text=enter your account" (count=1)  	[MsgId: MMSG-26364]
+Action.c(222): web_url("SignOff Button") was successful, 2175 body bytes, 584 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(235): Notify: Transaction "Sign_Off" ended with a "Pass" status (Duration: 5.4353 Think Time: 5.0002 Wasted Time: 0.0133).
+Action.c(243): Notify: Transaction "03_Cancel_First_Flight" ended with a "Pass" status (Duration: 34.2868 Think Time: 30.0007 Wasted Time: 0.0982).
+Ending action Action.
+Ending iteration 4.
+Starting iteration 5.
+Starting action Action.
+Action.c(4): Notify: Transaction "03_Cancel_First_Flight" started.
+Action.c(6): Notify: Transaction "WebTours" started.
+Action.c(8): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(8): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(9): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(9): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(11): web_set_sockets_option started  	[MsgId: MMSG-26355]
+Action.c(11): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
+Action.c(13): web_add_auto_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
+Action.c(13): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(16): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(16): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(19): web_add_auto_header("Sec-Fetch-Mode") started  	[MsgId: MMSG-26355]
+Action.c(19): web_add_auto_header("Sec-Fetch-Mode") was successful  	[MsgId: MMSG-26392]
+Action.c(22): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(22): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(25): web_url("WebTours") started  	[MsgId: MMSG-26355]
+Action.c(25): Detected non-resource "http://localhost:1080/WebTours/header.html" in "http://localhost:1080/WebTours/"  	[MsgId: MMSG-26574]
+Action.c(25): Detected non-resource "http://localhost:1080/cgi-bin/welcome.pl?signOff=true" in "http://localhost:1080/WebTours/"  	[MsgId: MMSG-26574]
+Action.c(25): Found resource "http://localhost:1080/WebTours/images/hp_logo.png" in HTML "http://localhost:1080/WebTours/header.html"  	[MsgId: MMSG-26659]
+Action.c(25): Found resource "http://localhost:1080/WebTours/images/webtours.png" in HTML "http://localhost:1080/WebTours/header.html"  	[MsgId: MMSG-26659]
+Action.c(25): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?in=home" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=true"  	[MsgId: MMSG-26574]
+Action.c(25): Detected non-resource "http://localhost:1080/WebTours/home.html" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=true"  	[MsgId: MMSG-26574]
+Action.c(25): Found resource "http://localhost:1080/WebTours/images/mer_login.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?in=home"  	[MsgId: MMSG-26659]
+Action.c(25): Registered web_reg_find successful for "Text=enter your account" (count=1)  	[MsgId: MMSG-26364]
+Action.c(25): web_url("WebTours") was successful, 10080 body bytes, 2371 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(38): Notify: Transaction "WebTours" ended with a "Pass" status (Duration: 0.3222 Wasted Time: 0.0187).
+Action.c(46): Notify: Transaction "Login" started.
+Action.c(48): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(48): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(50): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(50): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(53): web_remove_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(53): Previous automatically added web header for "Upgrade-Insecure-Requests" removed  	[MsgId: MMSG-26587]
+Action.c(53): web_remove/revert_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(55): web_add_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(55): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(58): web_add_auto_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
+Action.c(58): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(61): web_add_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(61): web_add_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(64): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(64): lr_think_time: 5.00 seconds (recorded think time was 40.00 seconds).
+Action.c(66): web_submit_data("login.pl") started  	[MsgId: MMSG-26355]
+Action.c(66): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home" in "http://localhost:1080/cgi-bin/login.pl"  	[MsgId: MMSG-26574]
+Action.c(66): Detected non-resource "http://localhost:1080/cgi-bin/login.pl?intro=true" in "http://localhost:1080/cgi-bin/login.pl"  	[MsgId: MMSG-26574]
+Action.c(66): Found resource "http://localhost:1080/WebTours/images/flights.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+Action.c(66): Found resource "http://localhost:1080/WebTours/images/itinerary.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+Action.c(66): Found resource "http://localhost:1080/WebTours/images/in_home.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+Action.c(66): Found resource "http://localhost:1080/WebTours/images/signoff.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+Action.c(66): Registered web_reg_find successful for "Text=you can search" (count=1)  	[MsgId: MMSG-26364]
+Action.c(66): web_submit_data("login.pl") was successful, 5780 body bytes, 2050 header bytes, 36 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(86): Notify: Transaction "Login" ended with a "Pass" status (Duration: 5.3770 Think Time: 4.9996 Wasted Time: 0.0179).
+Action.c(94): Notify: Transaction "Select_Itinerary" started.
+Action.c(96): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(96): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(97): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(97): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(99): web_remove_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(99): Previous automatically added web header for "Sec-Fetch-User" removed  	[MsgId: MMSG-26587]
+Action.c(99): web_remove/revert_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(101): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(101): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(104): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(104): lr_think_time: 5.00 seconds (recorded think time was 27.00 seconds).
+Action.c(106): web_url("Itinerary Button") started  	[MsgId: MMSG-26355]
+Action.c(106): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(106): Detected non-resource "http://localhost:1080/cgi-bin/itinerary.pl" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(106): Resource "http://localhost:1080/WebTours/images/flights.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(106): Found resource "http://localhost:1080/WebTours/images/in_itinerary.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary"  	[MsgId: MMSG-26659]
+Action.c(106): Found resource "http://localhost:1080/WebTours/images/home.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary"  	[MsgId: MMSG-26659]
+Action.c(106): Resource "http://localhost:1080/WebTours/images/signoff.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(106): Found resource "http://localhost:1080/WebTours/images/cancelreservation.gif" in HTML "http://localhost:1080/cgi-bin/itinerary.pl"  	[MsgId: MMSG-26659]
+Action.c(106): Found resource "http://localhost:1080/WebTours/images/cancelallreservations.gif" in HTML "http://localhost:1080/cgi-bin/itinerary.pl"  	[MsgId: MMSG-26659]
+Action.c(106): Registered web_reg_find successful for "Text=Itinerary" (count=3)  	[MsgId: MMSG-26364]
+Action.c(106): Registered web_reg_find successful for "Text=No flights have been reserved"  	[MsgId: MMSG-26362]
+Action.c(106): web_url("Itinerary Button") was successful, 23487 body bytes, 1918 header bytes, 37 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(119): Notify: Transaction "Select_Itinerary" ended with a "Pass" status (Duration: 5.4206 Think Time: 4.9999 Wasted Time: 0.0486).
+Action.c(130): Notify: Transaction "Get_ID" started.
+Action.c(131): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(131): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(132): web_remove_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(132): Warning -26590: web_remove/revert_auto_header for "Sec-Fetch-User" had no effect  	[MsgId: MWAR-26590]
+Action.c(132): web_remove/revert_auto_header("Sec-Fetch-User") highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(134): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(134): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(137): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(137): lr_think_time: 5.00 seconds (recorded think time was 27.00 seconds).
+Action.c(139): web_url("Itinerary Button") started  	[MsgId: MMSG-26355]
+Action.c(139): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(139): Detected non-resource "http://localhost:1080/cgi-bin/itinerary.pl" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/flights.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/in_itinerary.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/home.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/signoff.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/cancelreservation.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/cancelallreservations.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): web_url("Itinerary Button") was successful, 20493 body bytes, 728 header bytes, 37 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(149): Notify: Transaction "Get_ID" ended with a "Pass" status (Duration: 5.3769 Think Time: 5.0003 Wasted Time: 0.0166).
+Action.c(151): Notify: Transaction "Cancel_First" started.
+Action.c(152): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(152): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(153): web_add_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(153): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(156): web_add_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(156): web_add_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(159): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(159): lr_think_time: 5.00 seconds (recorded think time was 141.00 seconds).
+Action.c(161): web_submit_form("itinerary.pl") started  	[MsgId: MMSG-26355]
+Action.c(161): Submitting form to "http://localhost:1080/cgi-bin/itinerary.pl", Target Frame=""  	[MsgId: MMSG-27978]
+Action.c(161): Resource "http://localhost:1080/WebTours/images/cancelreservation.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(161): Resource "http://localhost:1080/WebTours/images/cancelallreservations.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(161): Registered web_reg_find successful for "Text=No flights have been reserved"  	[MsgId: MMSG-26362]
+Action.c(161): web_submit_form("itinerary.pl") was successful, 17285 body bytes, 256 header bytes, 13 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(168): Notify: Transaction "Cancel_First" ended with a "Pass" status (Duration: 5.3159 Think Time: 4.9994 Wasted Time: 0.0164).
+Action.c(176): Notify: Transaction "Confirm_Deletion" started.
+Action.c(180): Notify: Transaction "Get_ID_To_Compare" started.
+Action.c(182): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(182): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(183): web_remove_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(183): Previous automatically added web header for "Sec-Fetch-User" removed  	[MsgId: MMSG-26587]
+Action.c(183): web_remove/revert_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(185): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(185): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(188): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(188): lr_think_time: 5.00 seconds (recorded think time was 27.00 seconds).
+Action.c(190): web_url("Itinerary Button") started  	[MsgId: MMSG-26355]
+Action.c(190): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(190): Detected non-resource "http://localhost:1080/cgi-bin/itinerary.pl" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/flights.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/in_itinerary.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/home.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/signoff.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/cancelreservation.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/cancelallreservations.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Registered web_reg_find successful for "Text=323904838"  	[MsgId: MMSG-26362]
+Action.c(190): web_url("Itinerary Button") was successful, 19358 body bytes, 728 header bytes, 37 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(199): Notify: Transaction "Get_ID_To_Compare" ended with a "Pass" status (Duration: 5.3513 Think Time: 5.0003 Wasted Time: 0.0182).
+Action.c(202): Notify: Transaction "Confirm_Deletion" ended with a "Pass" status (Duration: 5.6717 Think Time: 5.0003 Wasted Time: 0.0182).
+Action.c(214): Notify: Transaction "Sign_Off" started.
+Action.c(216): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(216): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(218): web_remove_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(218): Warning -26590: web_remove/revert_auto_header for "Sec-Fetch-User" had no effect  	[MsgId: MWAR-26590]
+Action.c(218): web_remove/revert_auto_header("Sec-Fetch-User") highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(220): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(220): lr_think_time: 5.00 seconds (recorded think time was 19.00 seconds).
+Action.c(222): web_url("SignOff Button") started  	[MsgId: MMSG-26355]
+Action.c(222): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?in=home" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=1"  	[MsgId: MMSG-26574]
+Action.c(222): Detected non-resource "http://localhost:1080/WebTours/home.html" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=1"  	[MsgId: MMSG-26574]
+Action.c(222): Retrieving data from cache for "http://localhost:1080/WebTours/home.html"  	[MsgId: MMSG-26558]
+Action.c(222): Resource "http://localhost:1080/WebTours/images/mer_login.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(222): Registered web_reg_find successful for "Text=enter your account" (count=1)  	[MsgId: MMSG-26364]
+Action.c(222): web_url("SignOff Button") was successful, 2171 body bytes, 584 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(235): Notify: Transaction "Sign_Off" ended with a "Pass" status (Duration: 5.4496 Think Time: 5.0001 Wasted Time: 0.0169).
+Action.c(243): Notify: Transaction "03_Cancel_First_Flight" ended with a "Pass" status (Duration: 34.4896 Think Time: 29.9997 Wasted Time: 0.1533).
+Ending action Action.
+Ending iteration 5.
+Starting iteration 6.
+Starting action Action.
+Action.c(4): Notify: Transaction "03_Cancel_First_Flight" started.
+Action.c(6): Notify: Transaction "WebTours" started.
+Action.c(8): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(8): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(9): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(9): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(11): web_set_sockets_option started  	[MsgId: MMSG-26355]
+Action.c(11): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
+Action.c(13): web_add_auto_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
+Action.c(13): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(16): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(16): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(19): web_add_auto_header("Sec-Fetch-Mode") started  	[MsgId: MMSG-26355]
+Action.c(19): web_add_auto_header("Sec-Fetch-Mode") was successful  	[MsgId: MMSG-26392]
+Action.c(22): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(22): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(25): web_url("WebTours") started  	[MsgId: MMSG-26355]
+Action.c(25): Detected non-resource "http://localhost:1080/WebTours/header.html" in "http://localhost:1080/WebTours/"  	[MsgId: MMSG-26574]
+Action.c(25): Detected non-resource "http://localhost:1080/cgi-bin/welcome.pl?signOff=true" in "http://localhost:1080/WebTours/"  	[MsgId: MMSG-26574]
+Action.c(25): Found resource "http://localhost:1080/WebTours/images/hp_logo.png" in HTML "http://localhost:1080/WebTours/header.html"  	[MsgId: MMSG-26659]
+Action.c(25): Found resource "http://localhost:1080/WebTours/images/webtours.png" in HTML "http://localhost:1080/WebTours/header.html"  	[MsgId: MMSG-26659]
+Action.c(25): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?in=home" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=true"  	[MsgId: MMSG-26574]
+Action.c(25): Detected non-resource "http://localhost:1080/WebTours/home.html" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=true"  	[MsgId: MMSG-26574]
+Action.c(25): Found resource "http://localhost:1080/WebTours/images/mer_login.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?in=home"  	[MsgId: MMSG-26659]
+Action.c(25): Registered web_reg_find successful for "Text=enter your account" (count=1)  	[MsgId: MMSG-26364]
+Action.c(25): web_url("WebTours") was successful, 10080 body bytes, 2371 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(38): Notify: Transaction "WebTours" ended with a "Pass" status (Duration: 0.3406 Wasted Time: 0.0220).
+Action.c(46): Notify: Transaction "Login" started.
+Action.c(48): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(48): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(50): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(50): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(53): web_remove_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(53): Previous automatically added web header for "Upgrade-Insecure-Requests" removed  	[MsgId: MMSG-26587]
+Action.c(53): web_remove/revert_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(55): web_add_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(55): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(58): web_add_auto_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
+Action.c(58): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(61): web_add_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(61): web_add_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(64): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(64): lr_think_time: 5.00 seconds (recorded think time was 40.00 seconds).
+Action.c(66): web_submit_data("login.pl") started  	[MsgId: MMSG-26355]
+Action.c(66): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home" in "http://localhost:1080/cgi-bin/login.pl"  	[MsgId: MMSG-26574]
+Action.c(66): Detected non-resource "http://localhost:1080/cgi-bin/login.pl?intro=true" in "http://localhost:1080/cgi-bin/login.pl"  	[MsgId: MMSG-26574]
+Action.c(66): Found resource "http://localhost:1080/WebTours/images/flights.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+Action.c(66): Found resource "http://localhost:1080/WebTours/images/itinerary.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+Action.c(66): Found resource "http://localhost:1080/WebTours/images/in_home.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+Action.c(66): Found resource "http://localhost:1080/WebTours/images/signoff.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+Action.c(66): Registered web_reg_find successful for "Text=you can search" (count=1)  	[MsgId: MMSG-26364]
+Action.c(66): web_submit_data("login.pl") was successful, 5780 body bytes, 2050 header bytes, 36 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(86): Notify: Transaction "Login" ended with a "Pass" status (Duration: 5.3729 Think Time: 4.9991 Wasted Time: 0.0218).
+Action.c(94): Notify: Transaction "Select_Itinerary" started.
+Action.c(96): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(96): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(97): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(97): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(99): web_remove_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(99): Previous automatically added web header for "Sec-Fetch-User" removed  	[MsgId: MMSG-26587]
+Action.c(99): web_remove/revert_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(101): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(101): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(104): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(104): lr_think_time: 5.00 seconds (recorded think time was 27.00 seconds).
+Action.c(106): web_url("Itinerary Button") started  	[MsgId: MMSG-26355]
+Action.c(106): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(106): Detected non-resource "http://localhost:1080/cgi-bin/itinerary.pl" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(106): Resource "http://localhost:1080/WebTours/images/flights.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(106): Found resource "http://localhost:1080/WebTours/images/in_itinerary.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary"  	[MsgId: MMSG-26659]
+Action.c(106): Found resource "http://localhost:1080/WebTours/images/home.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary"  	[MsgId: MMSG-26659]
+Action.c(106): Resource "http://localhost:1080/WebTours/images/signoff.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(106): Found resource "http://localhost:1080/WebTours/images/cancelreservation.gif" in HTML "http://localhost:1080/cgi-bin/itinerary.pl"  	[MsgId: MMSG-26659]
+Action.c(106): Found resource "http://localhost:1080/WebTours/images/cancelallreservations.gif" in HTML "http://localhost:1080/cgi-bin/itinerary.pl"  	[MsgId: MMSG-26659]
+Action.c(106): Registered web_reg_find successful for "Text=Itinerary" (count=3)  	[MsgId: MMSG-26364]
+Action.c(106): Registered web_reg_find successful for "Text=No flights have been reserved"  	[MsgId: MMSG-26362]
+Action.c(106): web_url("Itinerary Button") was successful, 25821 body bytes, 1917 header bytes, 37 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(119): Notify: Transaction "Select_Itinerary" ended with a "Pass" status (Duration: 5.4521 Think Time: 4.9997 Wasted Time: 0.0427).
+Action.c(130): Notify: Transaction "Get_ID" started.
+Action.c(131): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(131): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(132): web_remove_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(132): Warning -26590: web_remove/revert_auto_header for "Sec-Fetch-User" had no effect  	[MsgId: MWAR-26590]
+Action.c(132): web_remove/revert_auto_header("Sec-Fetch-User") highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(134): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(134): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(137): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(137): lr_think_time: 5.00 seconds (recorded think time was 27.00 seconds).
+Action.c(139): web_url("Itinerary Button") started  	[MsgId: MMSG-26355]
+Action.c(139): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(139): Detected non-resource "http://localhost:1080/cgi-bin/itinerary.pl" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/flights.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/in_itinerary.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/home.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/signoff.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/cancelreservation.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/cancelallreservations.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): web_url("Itinerary Button") was successful, 22827 body bytes, 728 header bytes, 37 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(149): Notify: Transaction "Get_ID" ended with a "Pass" status (Duration: 5.3644 Think Time: 4.9998 Wasted Time: 0.0198).
+Action.c(151): Notify: Transaction "Cancel_First" started.
+Action.c(152): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(152): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(153): web_add_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(153): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(156): web_add_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(156): web_add_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(159): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(159): lr_think_time: 5.00 seconds (recorded think time was 141.00 seconds).
+Action.c(161): web_submit_form("itinerary.pl") started  	[MsgId: MMSG-26355]
+Action.c(161): Submitting form to "http://localhost:1080/cgi-bin/itinerary.pl", Target Frame=""  	[MsgId: MMSG-27978]
+Action.c(161): Resource "http://localhost:1080/WebTours/images/cancelreservation.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(161): Resource "http://localhost:1080/WebTours/images/cancelallreservations.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(161): Registered web_reg_find successful for "Text=No flights have been reserved"  	[MsgId: MMSG-26362]
+Action.c(161): web_submit_form("itinerary.pl") was successful, 17459 body bytes, 256 header bytes, 13 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(168): Notify: Transaction "Cancel_First" ended with a "Pass" status (Duration: 5.2670 Think Time: 5.0000 Wasted Time: 0.0192).
+Action.c(176): Notify: Transaction "Confirm_Deletion" started.
+Action.c(180): Notify: Transaction "Get_ID_To_Compare" started.
+Action.c(182): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(182): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(183): web_remove_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(183): Previous automatically added web header for "Sec-Fetch-User" removed  	[MsgId: MMSG-26587]
+Action.c(183): web_remove/revert_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(185): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(185): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(188): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(188): lr_think_time: 5.00 seconds (recorded think time was 27.00 seconds).
+Action.c(190): web_url("Itinerary Button") started  	[MsgId: MMSG-26355]
+Action.c(190): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(190): Detected non-resource "http://localhost:1080/cgi-bin/itinerary.pl" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/flights.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/in_itinerary.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/home.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/signoff.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/cancelreservation.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/cancelallreservations.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Error -26368: "Text=47" found for web_reg_find (count=1)  	[MsgId: MERR-26368]
+Action.c(190): web_url("Itinerary Button") highest severity level was "ERROR", 19532 body bytes, 728 header bytes, 37 chunking overhead bytes  	[MsgId: MMSG-26387]
+Action.c(190): Notify: Transaction "Get_ID_To_Compare" ended with a "Fail" status (Duration: 5.3303 Think Time: 5.0001 Wasted Time: 0.0199).
+Action.c(190): Notify: Transaction "Get_ID_To_Compare" has 1 error message(s).
+Action.c(190): Notify: The 1st error message associated with transaction "Get_ID_To_Compare" is "Error -26368: "Text=47" found for web_reg_find (count=1)"
+Action.c(190): Notify: Transaction "Confirm_Deletion" ended with a "Fail" status (Duration: 5.4776 Think Time: 5.0001 Wasted Time: 0.0199).
+Action.c(190): Notify: Transaction "Confirm_Deletion" has 1 error message(s).
+Action.c(190): Notify: The 1st error message associated with transaction "Confirm_Deletion" is "Error -26368: "Text=47" found for web_reg_find (count=1)"
+Action.c(190): Notify: Transaction "03_Cancel_First_Flight" ended with a "Fail" status (Duration: 28.6510 Think Time: 24.9987 Wasted Time: 0.1453).
+Action.c(190): Notify: Transaction "03_Cancel_First_Flight" has 1 error message(s).
+Action.c(190): Notify: The 1st error message associated with transaction "03_Cancel_First_Flight" is "Error -26368: "Text=47" found for web_reg_find (count=1)"
+Ending action Action.
+Ending iteration 6.
+Starting iteration 7.
+Starting action Action.
+Action.c(4): Notify: Transaction "03_Cancel_First_Flight" started.
+Action.c(6): Notify: Transaction "WebTours" started.
+Action.c(8): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(8): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(9): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(9): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(11): web_set_sockets_option started  	[MsgId: MMSG-26355]
+Action.c(11): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
+Action.c(13): web_add_auto_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
+Action.c(13): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(16): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(16): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(19): web_add_auto_header("Sec-Fetch-Mode") started  	[MsgId: MMSG-26355]
+Action.c(19): web_add_auto_header("Sec-Fetch-Mode") was successful  	[MsgId: MMSG-26392]
+Action.c(22): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(22): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(25): web_url("WebTours") started  	[MsgId: MMSG-26355]
+Action.c(25): Detected non-resource "http://localhost:1080/WebTours/header.html" in "http://localhost:1080/WebTours/"  	[MsgId: MMSG-26574]
+Action.c(25): Detected non-resource "http://localhost:1080/cgi-bin/welcome.pl?signOff=true" in "http://localhost:1080/WebTours/"  	[MsgId: MMSG-26574]
+Action.c(25): Found resource "http://localhost:1080/WebTours/images/hp_logo.png" in HTML "http://localhost:1080/WebTours/header.html"  	[MsgId: MMSG-26659]
+Action.c(25): Found resource "http://localhost:1080/WebTours/images/webtours.png" in HTML "http://localhost:1080/WebTours/header.html"  	[MsgId: MMSG-26659]
+Action.c(25): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?in=home" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=true"  	[MsgId: MMSG-26574]
+Action.c(25): Detected non-resource "http://localhost:1080/WebTours/home.html" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=true"  	[MsgId: MMSG-26574]
+Action.c(25): Found resource "http://localhost:1080/WebTours/images/mer_login.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?in=home"  	[MsgId: MMSG-26659]
+Action.c(25): Registered web_reg_find successful for "Text=enter your account" (count=1)  	[MsgId: MMSG-26364]
+Action.c(25): web_url("WebTours") was successful, 10078 body bytes, 2371 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(38): Notify: Transaction "WebTours" ended with a "Pass" status (Duration: 0.3649 Wasted Time: 0.0247).
+Action.c(46): Notify: Transaction "Login" started.
+Action.c(48): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(48): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(50): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(50): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(53): web_remove_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(53): Previous automatically added web header for "Upgrade-Insecure-Requests" removed  	[MsgId: MMSG-26587]
+Action.c(53): web_remove/revert_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(55): web_add_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(55): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(58): web_add_auto_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
+Action.c(58): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(61): web_add_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(61): web_add_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(64): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(64): lr_think_time: 5.00 seconds (recorded think time was 40.00 seconds).
+Action.c(66): web_submit_data("login.pl") started  	[MsgId: MMSG-26355]
+Action.c(66): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home" in "http://localhost:1080/cgi-bin/login.pl"  	[MsgId: MMSG-26574]
+Action.c(66): Detected non-resource "http://localhost:1080/cgi-bin/login.pl?intro=true" in "http://localhost:1080/cgi-bin/login.pl"  	[MsgId: MMSG-26574]
+Action.c(66): Found resource "http://localhost:1080/WebTours/images/flights.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+Action.c(66): Found resource "http://localhost:1080/WebTours/images/itinerary.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+Action.c(66): Found resource "http://localhost:1080/WebTours/images/in_home.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+Action.c(66): Found resource "http://localhost:1080/WebTours/images/signoff.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+Action.c(66): Registered web_reg_find successful for "Text=you can search" (count=1)  	[MsgId: MMSG-26364]
+Action.c(66): web_submit_data("login.pl") was successful, 5780 body bytes, 2050 header bytes, 36 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(86): Notify: Transaction "Login" ended with a "Pass" status (Duration: 5.3131 Think Time: 5.0002 Wasted Time: 0.0247).
+Action.c(94): Notify: Transaction "Select_Itinerary" started.
+Action.c(96): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(96): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(97): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(97): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(99): web_remove_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(99): Previous automatically added web header for "Sec-Fetch-User" removed  	[MsgId: MMSG-26587]
+Action.c(99): web_remove/revert_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(101): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(101): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(104): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(104): lr_think_time: 5.00 seconds (recorded think time was 27.00 seconds).
+Action.c(106): web_url("Itinerary Button") started  	[MsgId: MMSG-26355]
+Action.c(106): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(106): Detected non-resource "http://localhost:1080/cgi-bin/itinerary.pl" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(106): Resource "http://localhost:1080/WebTours/images/flights.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(106): Found resource "http://localhost:1080/WebTours/images/in_itinerary.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary"  	[MsgId: MMSG-26659]
+Action.c(106): Found resource "http://localhost:1080/WebTours/images/home.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary"  	[MsgId: MMSG-26659]
+Action.c(106): Resource "http://localhost:1080/WebTours/images/signoff.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(106): Found resource "http://localhost:1080/WebTours/images/cancelreservation.gif" in HTML "http://localhost:1080/cgi-bin/itinerary.pl"  	[MsgId: MMSG-26659]
+Action.c(106): Found resource "http://localhost:1080/WebTours/images/cancelallreservations.gif" in HTML "http://localhost:1080/cgi-bin/itinerary.pl"  	[MsgId: MMSG-26659]
+Action.c(106): Registered web_reg_find successful for "Text=Itinerary" (count=3)  	[MsgId: MMSG-26364]
+Action.c(106): Registered web_reg_find successful for "Text=No flights have been reserved"  	[MsgId: MMSG-26362]
+Action.c(106): web_url("Itinerary Button") was successful, 20119 body bytes, 1918 header bytes, 37 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(119): Notify: Transaction "Select_Itinerary" ended with a "Pass" status (Duration: 5.4323 Think Time: 5.0002 Wasted Time: 0.0536).
+Action.c(130): Notify: Transaction "Get_ID" started.
+Action.c(131): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(131): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(132): web_remove_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(132): Warning -26590: web_remove/revert_auto_header for "Sec-Fetch-User" had no effect  	[MsgId: MWAR-26590]
+Action.c(132): web_remove/revert_auto_header("Sec-Fetch-User") highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(134): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(134): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(137): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(137): lr_think_time: 5.00 seconds (recorded think time was 27.00 seconds).
+Action.c(139): web_url("Itinerary Button") started  	[MsgId: MMSG-26355]
+Action.c(139): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(139): Detected non-resource "http://localhost:1080/cgi-bin/itinerary.pl" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/flights.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/in_itinerary.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/home.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/signoff.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/cancelreservation.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/cancelallreservations.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): web_url("Itinerary Button") was successful, 17125 body bytes, 728 header bytes, 37 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(149): Notify: Transaction "Get_ID" ended with a "Pass" status (Duration: 5.5472 Think Time: 5.0011 Wasted Time: 0.0236).
+Action.c(151): Notify: Transaction "Cancel_First" started.
+Action.c(152): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(152): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(153): web_add_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(153): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(156): web_add_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(156): web_add_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(159): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(159): lr_think_time: 5.00 seconds (recorded think time was 141.00 seconds).
+Action.c(161): web_submit_form("itinerary.pl") started  	[MsgId: MMSG-26355]
+Action.c(161): Submitting form to "http://localhost:1080/cgi-bin/itinerary.pl", Target Frame=""  	[MsgId: MMSG-27978]
+Action.c(161): Resource "http://localhost:1080/WebTours/images/cancelreservation.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(161): Resource "http://localhost:1080/WebTours/images/cancelallreservations.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(161): Registered web_reg_find successful for "Text=No flights have been reserved"  	[MsgId: MMSG-26362]
+Action.c(161): web_submit_form("itinerary.pl") was successful, 13919 body bytes, 256 header bytes, 13 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(168): Notify: Transaction "Cancel_First" ended with a "Pass" status (Duration: 5.3093 Think Time: 5.0006 Wasted Time: 0.0219).
+Action.c(176): Notify: Transaction "Confirm_Deletion" started.
+Action.c(180): Notify: Transaction "Get_ID_To_Compare" started.
+Action.c(182): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(182): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(183): web_remove_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(183): Previous automatically added web header for "Sec-Fetch-User" removed  	[MsgId: MMSG-26587]
+Action.c(183): web_remove/revert_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(185): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(185): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(188): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(188): lr_think_time: 5.00 seconds (recorded think time was 27.00 seconds).
+Action.c(190): web_url("Itinerary Button") started  	[MsgId: MMSG-26355]
+Action.c(190): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(190): Detected non-resource "http://localhost:1080/cgi-bin/itinerary.pl" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/flights.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/in_itinerary.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/home.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/signoff.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/cancelreservation.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/cancelallreservations.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Registered web_reg_find successful for "Text=333479654"  	[MsgId: MMSG-26362]
+Action.c(190): web_url("Itinerary Button") was successful, 15992 body bytes, 728 header bytes, 37 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(199): Notify: Transaction "Get_ID_To_Compare" ended with a "Pass" status (Duration: 5.3577 Think Time: 4.9997 Wasted Time: 0.0243).
+Action.c(202): Notify: Transaction "Confirm_Deletion" ended with a "Pass" status (Duration: 5.6516 Think Time: 4.9997 Wasted Time: 0.0243).
+Action.c(214): Notify: Transaction "Sign_Off" started.
+Action.c(216): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(216): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(218): web_remove_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(218): Warning -26590: web_remove/revert_auto_header for "Sec-Fetch-User" had no effect  	[MsgId: MWAR-26590]
+Action.c(218): web_remove/revert_auto_header("Sec-Fetch-User") highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(220): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(220): lr_think_time: 5.00 seconds (recorded think time was 19.00 seconds).
+Action.c(222): web_url("SignOff Button") started  	[MsgId: MMSG-26355]
+Action.c(222): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?in=home" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=1"  	[MsgId: MMSG-26574]
+Action.c(222): Detected non-resource "http://localhost:1080/WebTours/home.html" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=1"  	[MsgId: MMSG-26574]
+Action.c(222): Retrieving data from cache for "http://localhost:1080/WebTours/home.html"  	[MsgId: MMSG-26558]
+Action.c(222): Resource "http://localhost:1080/WebTours/images/mer_login.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(222): Registered web_reg_find successful for "Text=enter your account" (count=1)  	[MsgId: MMSG-26364]
+Action.c(222): web_url("SignOff Button") was successful, 2175 body bytes, 584 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(235): Notify: Transaction "Sign_Off" ended with a "Pass" status (Duration: 5.3613 Think Time: 4.9999 Wasted Time: 0.0354).
+Action.c(243): Notify: Transaction "03_Cancel_First_Flight" ended with a "Pass" status (Duration: 34.4436 Think Time: 30.0018 Wasted Time: 0.2082).
+Ending action Action.
+Ending iteration 7.
+Starting iteration 8.
+Starting action Action.
+Action.c(4): Notify: Transaction "03_Cancel_First_Flight" started.
+Action.c(6): Notify: Transaction "WebTours" started.
+Action.c(8): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(8): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(9): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(9): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(11): web_set_sockets_option started  	[MsgId: MMSG-26355]
+Action.c(11): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
+Action.c(13): web_add_auto_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
+Action.c(13): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(16): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(16): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(19): web_add_auto_header("Sec-Fetch-Mode") started  	[MsgId: MMSG-26355]
+Action.c(19): web_add_auto_header("Sec-Fetch-Mode") was successful  	[MsgId: MMSG-26392]
+Action.c(22): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(22): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(25): web_url("WebTours") started  	[MsgId: MMSG-26355]
+Action.c(25): Detected non-resource "http://localhost:1080/WebTours/header.html" in "http://localhost:1080/WebTours/"  	[MsgId: MMSG-26574]
+Action.c(25): Detected non-resource "http://localhost:1080/cgi-bin/welcome.pl?signOff=true" in "http://localhost:1080/WebTours/"  	[MsgId: MMSG-26574]
+Action.c(25): Found resource "http://localhost:1080/WebTours/images/hp_logo.png" in HTML "http://localhost:1080/WebTours/header.html"  	[MsgId: MMSG-26659]
+Action.c(25): Found resource "http://localhost:1080/WebTours/images/webtours.png" in HTML "http://localhost:1080/WebTours/header.html"  	[MsgId: MMSG-26659]
+Action.c(25): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?in=home" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=true"  	[MsgId: MMSG-26574]
+Action.c(25): Detected non-resource "http://localhost:1080/WebTours/home.html" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=true"  	[MsgId: MMSG-26574]
+Action.c(25): Found resource "http://localhost:1080/WebTours/images/mer_login.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?in=home"  	[MsgId: MMSG-26659]
+Action.c(25): Registered web_reg_find successful for "Text=enter your account" (count=1)  	[MsgId: MMSG-26364]
+Action.c(25): web_url("WebTours") was successful, 10078 body bytes, 2371 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(38): Notify: Transaction "WebTours" ended with a "Pass" status (Duration: 0.2963 Wasted Time: 0.0402).
+Action.c(46): Notify: Transaction "Login" started.
+Action.c(48): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(48): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(50): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(50): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(53): web_remove_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(53): Previous automatically added web header for "Upgrade-Insecure-Requests" removed  	[MsgId: MMSG-26587]
+Action.c(53): web_remove/revert_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(55): web_add_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(55): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(58): web_add_auto_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
+Action.c(58): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(61): web_add_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(61): web_add_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(64): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(64): lr_think_time: 5.00 seconds (recorded think time was 40.00 seconds).
+Action.c(66): web_submit_data("login.pl") started  	[MsgId: MMSG-26355]
+Action.c(66): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home" in "http://localhost:1080/cgi-bin/login.pl"  	[MsgId: MMSG-26574]
+Action.c(66): Detected non-resource "http://localhost:1080/cgi-bin/login.pl?intro=true" in "http://localhost:1080/cgi-bin/login.pl"  	[MsgId: MMSG-26574]
+Action.c(66): Found resource "http://localhost:1080/WebTours/images/flights.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+Action.c(66): Found resource "http://localhost:1080/WebTours/images/itinerary.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+Action.c(66): Found resource "http://localhost:1080/WebTours/images/in_home.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+Action.c(66): Found resource "http://localhost:1080/WebTours/images/signoff.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+Action.c(66): Registered web_reg_find successful for "Text=you can search" (count=1)  	[MsgId: MMSG-26364]
+Action.c(66): web_submit_data("login.pl") was successful, 5780 body bytes, 2050 header bytes, 36 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(86): Notify: Transaction "Login" ended with a "Pass" status (Duration: 5.4118 Think Time: 4.9991 Wasted Time: 0.0276).
+Action.c(94): Notify: Transaction "Select_Itinerary" started.
+Action.c(96): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(96): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(97): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(97): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(99): web_remove_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(99): Previous automatically added web header for "Sec-Fetch-User" removed  	[MsgId: MMSG-26587]
+Action.c(99): web_remove/revert_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(101): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(101): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(104): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(104): lr_think_time: 5.00 seconds (recorded think time was 27.00 seconds).
+Action.c(106): web_url("Itinerary Button") started  	[MsgId: MMSG-26355]
+Action.c(106): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(106): Detected non-resource "http://localhost:1080/cgi-bin/itinerary.pl" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(106): Resource "http://localhost:1080/WebTours/images/flights.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(106): Found resource "http://localhost:1080/WebTours/images/in_itinerary.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary"  	[MsgId: MMSG-26659]
+Action.c(106): Found resource "http://localhost:1080/WebTours/images/home.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary"  	[MsgId: MMSG-26659]
+Action.c(106): Resource "http://localhost:1080/WebTours/images/signoff.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(106): Found resource "http://localhost:1080/WebTours/images/cancelreservation.gif" in HTML "http://localhost:1080/cgi-bin/itinerary.pl"  	[MsgId: MMSG-26659]
+Action.c(106): Found resource "http://localhost:1080/WebTours/images/cancelallreservations.gif" in HTML "http://localhost:1080/cgi-bin/itinerary.pl"  	[MsgId: MMSG-26659]
+Action.c(106): Registered web_reg_find successful for "Text=Itinerary" (count=3)  	[MsgId: MMSG-26364]
+Action.c(106): Registered web_reg_find successful for "Text=No flights have been reserved"  	[MsgId: MMSG-26362]
+Action.c(106): web_url("Itinerary Button") was successful, 15574 body bytes, 1918 header bytes, 37 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(119): Notify: Transaction "Select_Itinerary" ended with a "Pass" status (Duration: 5.4073 Think Time: 4.9999 Wasted Time: 0.0320).
+Action.c(130): Notify: Transaction "Get_ID" started.
+Action.c(131): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(131): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(132): web_remove_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(132): Warning -26590: web_remove/revert_auto_header for "Sec-Fetch-User" had no effect  	[MsgId: MWAR-26590]
+Action.c(132): web_remove/revert_auto_header("Sec-Fetch-User") highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(134): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(134): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(137): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(137): lr_think_time: 5.00 seconds (recorded think time was 27.00 seconds).
+Action.c(139): web_url("Itinerary Button") started  	[MsgId: MMSG-26355]
+Action.c(139): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(139): Detected non-resource "http://localhost:1080/cgi-bin/itinerary.pl" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/flights.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/in_itinerary.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/home.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/signoff.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/cancelreservation.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/cancelallreservations.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): web_url("Itinerary Button") was successful, 12580 body bytes, 728 header bytes, 37 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(149): Notify: Transaction "Get_ID" ended with a "Pass" status (Duration: 5.6202 Think Time: 4.9998 Wasted Time: 0.0261).
+Action.c(151): Notify: Transaction "Cancel_First" started.
+Action.c(152): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(152): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(153): web_add_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(153): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(156): web_add_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(156): web_add_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(159): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(159): lr_think_time: 5.00 seconds (recorded think time was 141.00 seconds).
+Action.c(161): web_submit_form("itinerary.pl") started  	[MsgId: MMSG-26355]
+Action.c(161): Submitting form to "http://localhost:1080/cgi-bin/itinerary.pl", Target Frame=""  	[MsgId: MMSG-27978]
+Action.c(161): Resource "http://localhost:1080/WebTours/images/cancelreservation.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(161): Resource "http://localhost:1080/WebTours/images/cancelallreservations.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(161): Registered web_reg_find successful for "Text=No flights have been reserved"  	[MsgId: MMSG-26362]
+Action.c(161): web_submit_form("itinerary.pl") was successful, 9376 body bytes, 256 header bytes, 13 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(168): Notify: Transaction "Cancel_First" ended with a "Pass" status (Duration: 5.2987 Think Time: 4.9995 Wasted Time: 0.0268).
+Action.c(176): Notify: Transaction "Confirm_Deletion" started.
+Action.c(180): Notify: Transaction "Get_ID_To_Compare" started.
+Action.c(182): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(182): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(183): web_remove_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(183): Previous automatically added web header for "Sec-Fetch-User" removed  	[MsgId: MMSG-26587]
+Action.c(183): web_remove/revert_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(185): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(185): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(188): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(188): lr_think_time: 5.00 seconds (recorded think time was 27.00 seconds).
+Action.c(190): web_url("Itinerary Button") started  	[MsgId: MMSG-26355]
+Action.c(190): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(190): Detected non-resource "http://localhost:1080/cgi-bin/itinerary.pl" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/flights.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/in_itinerary.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/home.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/signoff.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/cancelreservation.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/cancelallreservations.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Registered web_reg_find successful for "Text=869918561"  	[MsgId: MMSG-26362]
+Action.c(190): web_url("Itinerary Button") was successful, 11449 body bytes, 728 header bytes, 37 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(199): Notify: Transaction "Get_ID_To_Compare" ended with a "Pass" status (Duration: 5.3460 Think Time: 4.9997 Wasted Time: 0.0266).
+Action.c(202): Notify: Transaction "Confirm_Deletion" ended with a "Pass" status (Duration: 5.7026 Think Time: 4.9997 Wasted Time: 0.0266).
+Action.c(214): Notify: Transaction "Sign_Off" started.
+Action.c(216): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(216): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(218): web_remove_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(218): Warning -26590: web_remove/revert_auto_header for "Sec-Fetch-User" had no effect  	[MsgId: MWAR-26590]
+Action.c(218): web_remove/revert_auto_header("Sec-Fetch-User") highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(220): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(220): lr_think_time: 5.00 seconds (recorded think time was 19.00 seconds).
+Action.c(222): web_url("SignOff Button") started  	[MsgId: MMSG-26355]
+Action.c(222): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?in=home" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=1"  	[MsgId: MMSG-26574]
+Action.c(222): Detected non-resource "http://localhost:1080/WebTours/home.html" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=1"  	[MsgId: MMSG-26574]
+Action.c(222): Retrieving data from cache for "http://localhost:1080/WebTours/home.html"  	[MsgId: MMSG-26558]
+Action.c(222): Resource "http://localhost:1080/WebTours/images/mer_login.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(222): Registered web_reg_find successful for "Text=enter your account" (count=1)  	[MsgId: MMSG-26364]
+Action.c(222): web_url("SignOff Button") was successful, 2174 body bytes, 584 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(235): Notify: Transaction "Sign_Off" ended with a "Pass" status (Duration: 5.3372 Think Time: 5.0009 Wasted Time: 0.0277).
+Action.c(243): Notify: Transaction "03_Cancel_First_Flight" ended with a "Pass" status (Duration: 34.6511 Think Time: 29.9989 Wasted Time: 0.2070).
+Ending action Action.
+Ending iteration 8.
+Starting iteration 9.
+Starting action Action.
+Action.c(4): Notify: Transaction "03_Cancel_First_Flight" started.
+Action.c(6): Notify: Transaction "WebTours" started.
+Action.c(8): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(8): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(9): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(9): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(11): web_set_sockets_option started  	[MsgId: MMSG-26355]
+Action.c(11): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
+Action.c(13): web_add_auto_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
+Action.c(13): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(16): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(16): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(19): web_add_auto_header("Sec-Fetch-Mode") started  	[MsgId: MMSG-26355]
+Action.c(19): web_add_auto_header("Sec-Fetch-Mode") was successful  	[MsgId: MMSG-26392]
+Action.c(22): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(22): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(25): web_url("WebTours") started  	[MsgId: MMSG-26355]
+Action.c(25): Detected non-resource "http://localhost:1080/WebTours/header.html" in "http://localhost:1080/WebTours/"  	[MsgId: MMSG-26574]
+Action.c(25): Detected non-resource "http://localhost:1080/cgi-bin/welcome.pl?signOff=true" in "http://localhost:1080/WebTours/"  	[MsgId: MMSG-26574]
+Action.c(25): Found resource "http://localhost:1080/WebTours/images/hp_logo.png" in HTML "http://localhost:1080/WebTours/header.html"  	[MsgId: MMSG-26659]
+Action.c(25): Found resource "http://localhost:1080/WebTours/images/webtours.png" in HTML "http://localhost:1080/WebTours/header.html"  	[MsgId: MMSG-26659]
+Action.c(25): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?in=home" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=true"  	[MsgId: MMSG-26574]
+Action.c(25): Detected non-resource "http://localhost:1080/WebTours/home.html" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=true"  	[MsgId: MMSG-26574]
+Action.c(25): Found resource "http://localhost:1080/WebTours/images/mer_login.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?in=home"  	[MsgId: MMSG-26659]
+Action.c(25): Registered web_reg_find successful for "Text=enter your account" (count=1)  	[MsgId: MMSG-26364]
+Action.c(25): web_url("WebTours") was successful, 10076 body bytes, 2371 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(38): Notify: Transaction "WebTours" ended with a "Pass" status (Duration: 0.2938 Wasted Time: 0.0320).
+Action.c(46): Notify: Transaction "Login" started.
+Action.c(48): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(48): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(50): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(50): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(53): web_remove_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(53): Previous automatically added web header for "Upgrade-Insecure-Requests" removed  	[MsgId: MMSG-26587]
+Action.c(53): web_remove/revert_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(55): web_add_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(55): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(58): web_add_auto_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
+Action.c(58): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(61): web_add_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(61): web_add_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(64): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(64): lr_think_time: 5.00 seconds (recorded think time was 40.00 seconds).
+Action.c(66): web_submit_data("login.pl") started  	[MsgId: MMSG-26355]
+Action.c(66): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home" in "http://localhost:1080/cgi-bin/login.pl"  	[MsgId: MMSG-26574]
+Action.c(66): Detected non-resource "http://localhost:1080/cgi-bin/login.pl?intro=true" in "http://localhost:1080/cgi-bin/login.pl"  	[MsgId: MMSG-26574]
+Action.c(66): Found resource "http://localhost:1080/WebTours/images/flights.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+Action.c(66): Found resource "http://localhost:1080/WebTours/images/itinerary.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+Action.c(66): Found resource "http://localhost:1080/WebTours/images/in_home.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+Action.c(66): Found resource "http://localhost:1080/WebTours/images/signoff.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+Action.c(66): Registered web_reg_find successful for "Text=you can search" (count=1)  	[MsgId: MMSG-26364]
+Action.c(66): web_submit_data("login.pl") was successful, 5780 body bytes, 2050 header bytes, 36 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(86): Notify: Transaction "Login" ended with a "Pass" status (Duration: 5.3767 Think Time: 5.0005 Wasted Time: 0.0321).
+Action.c(94): Notify: Transaction "Select_Itinerary" started.
+Action.c(96): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(96): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(97): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(97): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(99): web_remove_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(99): Previous automatically added web header for "Sec-Fetch-User" removed  	[MsgId: MMSG-26587]
+Action.c(99): web_remove/revert_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(101): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(101): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(104): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(104): lr_think_time: 5.00 seconds (recorded think time was 27.00 seconds).
+Action.c(106): web_url("Itinerary Button") started  	[MsgId: MMSG-26355]
+Action.c(106): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(106): Detected non-resource "http://localhost:1080/cgi-bin/itinerary.pl" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(106): Resource "http://localhost:1080/WebTours/images/flights.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(106): Found resource "http://localhost:1080/WebTours/images/in_itinerary.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary"  	[MsgId: MMSG-26659]
+Action.c(106): Found resource "http://localhost:1080/WebTours/images/home.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary"  	[MsgId: MMSG-26659]
+Action.c(106): Resource "http://localhost:1080/WebTours/images/signoff.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(106): Found resource "http://localhost:1080/WebTours/images/cancelreservation.gif" in HTML "http://localhost:1080/cgi-bin/itinerary.pl"  	[MsgId: MMSG-26659]
+Action.c(106): Found resource "http://localhost:1080/WebTours/images/cancelallreservations.gif" in HTML "http://localhost:1080/cgi-bin/itinerary.pl"  	[MsgId: MMSG-26659]
+Action.c(106): Registered web_reg_find successful for "Text=Itinerary" (count=3)  	[MsgId: MMSG-26364]
+Action.c(106): Registered web_reg_find successful for "Text=No flights have been reserved"  	[MsgId: MMSG-26362]
+Action.c(106): web_url("Itinerary Button") was successful, 21243 body bytes, 1918 header bytes, 37 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(119): Notify: Transaction "Select_Itinerary" ended with a "Pass" status (Duration: 5.5360 Think Time: 4.9999 Wasted Time: 0.0335).
+Action.c(130): Notify: Transaction "Get_ID" started.
+Action.c(131): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(131): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(132): web_remove_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(132): Warning -26590: web_remove/revert_auto_header for "Sec-Fetch-User" had no effect  	[MsgId: MWAR-26590]
+Action.c(132): web_remove/revert_auto_header("Sec-Fetch-User") highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(134): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(134): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(137): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(137): lr_think_time: 5.00 seconds (recorded think time was 27.00 seconds).
+Action.c(139): web_url("Itinerary Button") started  	[MsgId: MMSG-26355]
+Action.c(139): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(139): Detected non-resource "http://localhost:1080/cgi-bin/itinerary.pl" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/flights.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/in_itinerary.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/home.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/signoff.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/cancelreservation.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/cancelallreservations.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): web_url("Itinerary Button") was successful, 18249 body bytes, 728 header bytes, 37 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(149): Notify: Transaction "Get_ID" ended with a "Pass" status (Duration: 5.3389 Think Time: 4.9999 Wasted Time: 0.0311).
+Action.c(151): Notify: Transaction "Cancel_First" started.
+Action.c(152): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(152): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(153): web_add_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(153): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(156): web_add_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(156): web_add_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(159): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(159): lr_think_time: 5.00 seconds (recorded think time was 141.00 seconds).
+Action.c(161): web_submit_form("itinerary.pl") started  	[MsgId: MMSG-26355]
+Action.c(161): Submitting form to "http://localhost:1080/cgi-bin/itinerary.pl", Target Frame=""  	[MsgId: MMSG-27978]
+Action.c(161): Resource "http://localhost:1080/WebTours/images/cancelreservation.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(161): Resource "http://localhost:1080/WebTours/images/cancelallreservations.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(161): Registered web_reg_find successful for "Text=No flights have been reserved"  	[MsgId: MMSG-26362]
+Action.c(161): web_submit_form("itinerary.pl") was successful, 15047 body bytes, 256 header bytes, 13 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(168): Notify: Transaction "Cancel_First" ended with a "Pass" status (Duration: 5.2701 Think Time: 4.9992 Wasted Time: 0.0294).
+Action.c(176): Notify: Transaction "Confirm_Deletion" started.
+Action.c(180): Notify: Transaction "Get_ID_To_Compare" started.
+Action.c(182): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(182): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(183): web_remove_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(183): Previous automatically added web header for "Sec-Fetch-User" removed  	[MsgId: MMSG-26587]
+Action.c(183): web_remove/revert_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(185): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(185): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(188): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(188): lr_think_time: 5.00 seconds (recorded think time was 27.00 seconds).
+Action.c(190): web_url("Itinerary Button") started  	[MsgId: MMSG-26355]
+Action.c(190): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(190): Detected non-resource "http://localhost:1080/cgi-bin/itinerary.pl" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/flights.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/in_itinerary.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/home.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/signoff.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/cancelreservation.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/cancelallreservations.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Registered web_reg_find successful for "Text=326806696"  	[MsgId: MMSG-26362]
+Action.c(190): web_url("Itinerary Button") was successful, 17120 body bytes, 728 header bytes, 37 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(199): Notify: Transaction "Get_ID_To_Compare" ended with a "Pass" status (Duration: 5.3382 Think Time: 5.0002 Wasted Time: 0.0310).
+Action.c(202): Notify: Transaction "Confirm_Deletion" ended with a "Pass" status (Duration: 5.6899 Think Time: 5.0002 Wasted Time: 0.0310).
+Action.c(214): Notify: Transaction "Sign_Off" started.
+Action.c(216): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(216): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(218): web_remove_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(218): Warning -26590: web_remove/revert_auto_header for "Sec-Fetch-User" had no effect  	[MsgId: MWAR-26590]
+Action.c(218): web_remove/revert_auto_header("Sec-Fetch-User") highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(220): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(220): lr_think_time: 5.00 seconds (recorded think time was 19.00 seconds).
+Action.c(222): web_url("SignOff Button") started  	[MsgId: MMSG-26355]
+Action.c(222): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?in=home" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=1"  	[MsgId: MMSG-26574]
+Action.c(222): Detected non-resource "http://localhost:1080/WebTours/home.html" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=1"  	[MsgId: MMSG-26574]
+Action.c(222): Retrieving data from cache for "http://localhost:1080/WebTours/home.html"  	[MsgId: MMSG-26558]
+Action.c(222): Resource "http://localhost:1080/WebTours/images/mer_login.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(222): Registered web_reg_find successful for "Text=enter your account" (count=1)  	[MsgId: MMSG-26364]
+Action.c(222): web_url("SignOff Button") was successful, 2176 body bytes, 584 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(235): Notify: Transaction "Sign_Off" ended with a "Pass" status (Duration: 5.3915 Think Time: 4.9993 Wasted Time: 0.0308).
+Action.c(243): Notify: Transaction "03_Cancel_First_Flight" ended with a "Pass" status (Duration: 34.5481 Think Time: 29.9991 Wasted Time: 0.2199).
+Ending action Action.
+Ending iteration 9.
+Starting iteration 10.
+Starting action Action.
+Action.c(4): Notify: Transaction "03_Cancel_First_Flight" started.
+Action.c(6): Notify: Transaction "WebTours" started.
+Action.c(8): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(8): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(9): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(9): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(11): web_set_sockets_option started  	[MsgId: MMSG-26355]
+Action.c(11): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
+Action.c(13): web_add_auto_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
+Action.c(13): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(16): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(16): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(19): web_add_auto_header("Sec-Fetch-Mode") started  	[MsgId: MMSG-26355]
+Action.c(19): web_add_auto_header("Sec-Fetch-Mode") was successful  	[MsgId: MMSG-26392]
+Action.c(22): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(22): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(25): web_url("WebTours") started  	[MsgId: MMSG-26355]
+Action.c(25): Detected non-resource "http://localhost:1080/WebTours/header.html" in "http://localhost:1080/WebTours/"  	[MsgId: MMSG-26574]
+Action.c(25): Detected non-resource "http://localhost:1080/cgi-bin/welcome.pl?signOff=true" in "http://localhost:1080/WebTours/"  	[MsgId: MMSG-26574]
+Action.c(25): Found resource "http://localhost:1080/WebTours/images/hp_logo.png" in HTML "http://localhost:1080/WebTours/header.html"  	[MsgId: MMSG-26659]
+Action.c(25): Found resource "http://localhost:1080/WebTours/images/webtours.png" in HTML "http://localhost:1080/WebTours/header.html"  	[MsgId: MMSG-26659]
+Action.c(25): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?in=home" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=true"  	[MsgId: MMSG-26574]
+Action.c(25): Detected non-resource "http://localhost:1080/WebTours/home.html" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=true"  	[MsgId: MMSG-26574]
+Action.c(25): Found resource "http://localhost:1080/WebTours/images/mer_login.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?in=home"  	[MsgId: MMSG-26659]
+Action.c(25): Registered web_reg_find successful for "Text=enter your account" (count=1)  	[MsgId: MMSG-26364]
+Action.c(25): web_url("WebTours") was successful, 10076 body bytes, 2371 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(38): Notify: Transaction "WebTours" ended with a "Pass" status (Duration: 0.3524 Wasted Time: 0.0364).
+Action.c(46): Notify: Transaction "Login" started.
+Action.c(48): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(48): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(50): web_add_auto_header("Sec-Fetch-Dest") started  	[MsgId: MMSG-26355]
+Action.c(50): web_add_auto_header("Sec-Fetch-Dest") was successful  	[MsgId: MMSG-26392]
+Action.c(53): web_remove_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(53): Previous automatically added web header for "Upgrade-Insecure-Requests" removed  	[MsgId: MMSG-26587]
+Action.c(53): web_remove/revert_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(55): web_add_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(55): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(58): web_add_auto_header("Sec-Fetch-Site") started  	[MsgId: MMSG-26355]
+Action.c(58): web_add_auto_header("Sec-Fetch-Site") was successful  	[MsgId: MMSG-26392]
+Action.c(61): web_add_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(61): web_add_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(64): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(64): lr_think_time: 5.00 seconds (recorded think time was 40.00 seconds).
+Action.c(66): web_submit_data("login.pl") started  	[MsgId: MMSG-26355]
+Action.c(66): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home" in "http://localhost:1080/cgi-bin/login.pl"  	[MsgId: MMSG-26574]
+Action.c(66): Detected non-resource "http://localhost:1080/cgi-bin/login.pl?intro=true" in "http://localhost:1080/cgi-bin/login.pl"  	[MsgId: MMSG-26574]
+Action.c(66): Found resource "http://localhost:1080/WebTours/images/flights.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+Action.c(66): Found resource "http://localhost:1080/WebTours/images/itinerary.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+Action.c(66): Found resource "http://localhost:1080/WebTours/images/in_home.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+Action.c(66): Found resource "http://localhost:1080/WebTours/images/signoff.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+Action.c(66): Registered web_reg_find successful for "Text=you can search" (count=1)  	[MsgId: MMSG-26364]
+Action.c(66): web_submit_data("login.pl") was successful, 5780 body bytes, 2050 header bytes, 36 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(86): Notify: Transaction "Login" ended with a "Pass" status (Duration: 5.3216 Think Time: 5.0008 Wasted Time: 0.0352).
+Action.c(94): Notify: Transaction "Select_Itinerary" started.
+Action.c(96): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(96): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(97): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(97): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(99): web_remove_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(99): Previous automatically added web header for "Sec-Fetch-User" removed  	[MsgId: MMSG-26587]
+Action.c(99): web_remove/revert_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(101): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(101): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(104): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(104): lr_think_time: 5.00 seconds (recorded think time was 27.00 seconds).
+Action.c(106): web_url("Itinerary Button") started  	[MsgId: MMSG-26355]
+Action.c(106): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(106): Detected non-resource "http://localhost:1080/cgi-bin/itinerary.pl" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(106): Resource "http://localhost:1080/WebTours/images/flights.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(106): Found resource "http://localhost:1080/WebTours/images/in_itinerary.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary"  	[MsgId: MMSG-26659]
+Action.c(106): Found resource "http://localhost:1080/WebTours/images/home.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary"  	[MsgId: MMSG-26659]
+Action.c(106): Resource "http://localhost:1080/WebTours/images/signoff.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(106): Found resource "http://localhost:1080/WebTours/images/cancelreservation.gif" in HTML "http://localhost:1080/cgi-bin/itinerary.pl"  	[MsgId: MMSG-26659]
+Action.c(106): Found resource "http://localhost:1080/WebTours/images/cancelallreservations.gif" in HTML "http://localhost:1080/cgi-bin/itinerary.pl"  	[MsgId: MMSG-26659]
+Action.c(106): Registered web_reg_find successful for "Text=Itinerary" (count=3)  	[MsgId: MMSG-26364]
+Action.c(106): Registered web_reg_find successful for "Text=No flights have been reserved"  	[MsgId: MMSG-26362]
+Action.c(106): web_url("Itinerary Button") was successful, 21256 body bytes, 1918 header bytes, 37 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(119): Notify: Transaction "Select_Itinerary" ended with a "Pass" status (Duration: 5.4372 Think Time: 5.0003 Wasted Time: 0.0530).
+Action.c(130): Notify: Transaction "Get_ID" started.
+Action.c(131): web_reg_save_param started  	[MsgId: MMSG-26355]
+Action.c(131): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+Action.c(132): web_remove_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(132): Warning -26590: web_remove/revert_auto_header for "Sec-Fetch-User" had no effect  	[MsgId: MWAR-26590]
+Action.c(132): web_remove/revert_auto_header("Sec-Fetch-User") highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(134): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(134): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(137): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(137): lr_think_time: 5.00 seconds (recorded think time was 27.00 seconds).
+Action.c(139): web_url("Itinerary Button") started  	[MsgId: MMSG-26355]
+Action.c(139): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(139): Detected non-resource "http://localhost:1080/cgi-bin/itinerary.pl" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/flights.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/in_itinerary.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/home.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/signoff.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/cancelreservation.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): Resource "http://localhost:1080/WebTours/images/cancelallreservations.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(139): web_url("Itinerary Button") was successful, 18262 body bytes, 728 header bytes, 37 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(149): Notify: Transaction "Get_ID" ended with a "Pass" status (Duration: 5.3140 Think Time: 5.0008 Wasted Time: 0.0339).
+Action.c(151): Notify: Transaction "Cancel_First" started.
+Action.c(152): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(152): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(153): web_add_header("Origin") started  	[MsgId: MMSG-26355]
+Action.c(153): web_add_header("Origin") was successful  	[MsgId: MMSG-26392]
+Action.c(156): web_add_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(156): web_add_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(159): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(159): lr_think_time: 5.00 seconds (recorded think time was 141.00 seconds).
+Action.c(161): web_submit_form("itinerary.pl") started  	[MsgId: MMSG-26355]
+Action.c(161): Submitting form to "http://localhost:1080/cgi-bin/itinerary.pl", Target Frame=""  	[MsgId: MMSG-27978]
+Action.c(161): Resource "http://localhost:1080/WebTours/images/cancelreservation.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(161): Resource "http://localhost:1080/WebTours/images/cancelallreservations.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(161): Registered web_reg_find successful for "Text=No flights have been reserved"  	[MsgId: MMSG-26362]
+Action.c(161): web_submit_form("itinerary.pl") was successful, 15051 body bytes, 256 header bytes, 13 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(168): Notify: Transaction "Cancel_First" ended with a "Pass" status (Duration: 5.2663 Think Time: 5.0003 Wasted Time: 0.0347).
+Action.c(176): Notify: Transaction "Confirm_Deletion" started.
+Action.c(180): Notify: Transaction "Get_ID_To_Compare" started.
+Action.c(182): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(182): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(183): web_remove_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(183): Previous automatically added web header for "Sec-Fetch-User" removed  	[MsgId: MMSG-26587]
+Action.c(183): web_remove/revert_auto_header("Sec-Fetch-User") was successful  	[MsgId: MMSG-26392]
+Action.c(185): web_add_auto_header("Upgrade-Insecure-Requests") started  	[MsgId: MMSG-26355]
+Action.c(185): web_add_auto_header("Upgrade-Insecure-Requests") was successful  	[MsgId: MMSG-26392]
+Action.c(188): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(188): lr_think_time: 5.00 seconds (recorded think time was 27.00 seconds).
+Action.c(190): web_url("Itinerary Button") started  	[MsgId: MMSG-26355]
+Action.c(190): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=itinerary" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(190): Detected non-resource "http://localhost:1080/cgi-bin/itinerary.pl" in "http://localhost:1080/cgi-bin/welcome.pl?page=itinerary"  	[MsgId: MMSG-26574]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/flights.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/in_itinerary.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/home.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/signoff.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/cancelreservation.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Resource "http://localhost:1080/WebTours/images/cancelallreservations.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(190): Registered web_reg_find successful for "Text=271931867"  	[MsgId: MMSG-26362]
+Action.c(190): web_url("Itinerary Button") was successful, 17124 body bytes, 728 header bytes, 37 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(199): Notify: Transaction "Get_ID_To_Compare" ended with a "Pass" status (Duration: 5.3735 Think Time: 5.0006 Wasted Time: 0.0335).
+Action.c(202): Notify: Transaction "Confirm_Deletion" ended with a "Pass" status (Duration: 5.6846 Think Time: 5.0006 Wasted Time: 0.0335).
+Action.c(214): Notify: Transaction "Sign_Off" started.
+Action.c(216): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(216): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(218): web_remove_auto_header("Sec-Fetch-User") started  	[MsgId: MMSG-26355]
+Action.c(218): Warning -26590: web_remove/revert_auto_header for "Sec-Fetch-User" had no effect  	[MsgId: MWAR-26590]
+Action.c(218): web_remove/revert_auto_header("Sec-Fetch-User") highest severity level was "warning"  	[MsgId: MMSG-26391]
+Action.c(220): Think time - Waiting 5.00 seconds (according to limit).
+Action.c(220): lr_think_time: 5.00 seconds (recorded think time was 19.00 seconds).
+Action.c(222): web_url("SignOff Button") started  	[MsgId: MMSG-26355]
+Action.c(222): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?in=home" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=1"  	[MsgId: MMSG-26574]
+Action.c(222): Detected non-resource "http://localhost:1080/WebTours/home.html" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=1"  	[MsgId: MMSG-26574]
+Action.c(222): Retrieving data from cache for "http://localhost:1080/WebTours/home.html"  	[MsgId: MMSG-26558]
+Action.c(222): Resource "http://localhost:1080/WebTours/images/mer_login.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(222): Registered web_reg_find successful for "Text=enter your account" (count=1)  	[MsgId: MMSG-26364]
+Action.c(222): web_url("SignOff Button") was successful, 2168 body bytes, 584 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(235): Notify: Transaction "Sign_Off" ended with a "Pass" status (Duration: 5.5298 Think Time: 5.0001 Wasted Time: 0.0341).
+Action.c(243): Notify: Transaction "03_Cancel_First_Flight" ended with a "Pass" status (Duration: 34.5060 Think Time: 30.0029 Wasted Time: 0.2609).
+Ending action Action.
+Ending iteration 10.
 Ending Vuser...
 Starting action vuser_end.
 Ending action vuser_end.

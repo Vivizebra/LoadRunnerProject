@@ -1,8 +1,8 @@
 HTTP/1.1 200 OK
-Date: Sat, 01 Aug 2020 11:21:51 GMT
+Date: Mon, 03 Aug 2020 23:47:22 GMT
 Server: Apache/2.2.21 (Win32)
-Expires: Fri, 31 Jul 2020 11:21:51 GMT
-Set-Cookie: MTUserInfo=firstName&Jojo8&username&jojo8&address2&City8&hash&88&address1&Street8&lastName&Bean8%0A; path=/
+Expires: Sun, 02 Aug 2020 23:47:23 GMT
+Set-Cookie: MTUserInfo=firstName&Jojo&username&jojo&address2&&hash&47&address1&&lastName&Bean%0A; path=/
 Keep-Alive: timeout=5, max=99
 Connection: Keep-Alive
 Transfer-Encoding: chunked

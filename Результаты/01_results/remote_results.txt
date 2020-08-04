@@ -1,0 +1,2 @@
+[Hosts]
+localhost=d:\githublocal\loadrunnerproject\results\01_results\localhost_1.eve

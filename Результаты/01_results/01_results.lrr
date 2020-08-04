@@ -1,0 +1,40 @@
+[Scenario]
+Product=HPE LoadRunner Controller
+Version=12.55.0.0
+Path=D:\GitHubLocal\LoadRunnerProject\Scenarios\01_Otladochnii_Test.lrs
+Subject=01_Otladochnii_Test
+Result_file=d:\githublocal\loadrunnerproject\results\01_results\01_results.lrr
+Description=
+ResultName=01_results
+Time_Zone=-10800
+Start_time=1596502080
+Daylight_Bias=0
+Stop_time=1596503535
+[Configuration]
+Public_local=1
+Is_mix=1
+Is_runner_file=0
+Runner_file=
+[Running_mode]
+Start_reason=By command
+Stop_reason=By a user
+[Data Collection]
+FullData=1
+[Scenario_summary]
+Scenario Type=Manual Scenario
+Goal Profile Name=Schedule 1
+Mode=Scenario Scheduling
+Scenario Duration=Start 10 Vusers: 1 every 00:00:05 (HH:MM:SS); Run for 00:22:00 (HH:MM:SS); Stop all Vusers: 1 every 00:00:05 (HH:MM:SS)
+Load Behavior=Initialize each Vuser just before it runs
+[Scripts]
+01_Book_flight_and_visit_itinerary=D:\GitHubLocal\LoadRunnerProject\Scripts\01_Book_flight_and_visit_itinerary\01_Book_flight_and_visit_itinerary.usr
+02_Book_Flight=D:\GitHubLocal\LoadRunnerProject\Scripts\02_Book_Flight\02_Book_Flight.usr
+04_Cancel_First_Flight_And_Book_A_New_One=D:\GitHubLocal\LoadRunnerProject\Scripts\04_Cancel_First_Flight_And_Book_A_New_One\04_Cancel_First_Flight_And_Book_A_New_One.usr
+03_Cancel_First_Flight=D:\GitHubLocal\LoadRunnerProject\Scripts\03_Cancel_First_Flight\03_Cancel_First_Flight.usr
+05_View_Itinerary=D:\GitHubLocal\LoadRunnerProject\Scripts\05_View_Itinerary\05_View_Itinerary.usr
+[Scripts_types]
+01_Book_flight_and_visit_itinerary=Multi+QTWeb
+02_Book_Flight=Multi+QTWeb
+04_Cancel_First_Flight_And_Book_A_New_One=Multi+QTWeb
+03_Cancel_First_Flight=Multi+QTWeb
+05_View_Itinerary=Multi+QTWeb

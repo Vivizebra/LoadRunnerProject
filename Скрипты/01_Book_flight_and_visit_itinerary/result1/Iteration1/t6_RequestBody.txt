@@ -1,4 +1,4 @@
-"firstName=jojo7&lastName=Bean&address1=Street7&address2=City7&pass1=Jojo+Bean&creditCard=26840"
-"20285612348&expDate=09%2F25&oldCCOption=&numPassengers=1&seatType=Business&seatPref=Aisle&outb"
-"oundFlight=650%3B110%3B08%2F01%2F2020&advanceDiscount=0&returnFlight=&JSFormSubmit=off&buyFlig"
-"hts.x=40&buyFlights.y=7&.cgifields=saveCC"
+"firstName=jojo2&lastName=Bean&address1=Street2&address2=City2&pass1=Jojo+Bean&creditCard=59205"
+"47392857499&expDate=07%2F22&oldCCOption=&numPassengers=1&seatType=First&seatPref=Aisle&outboun"
+"dFlight=640%3B1167%3B08%2F04%2F2020&advanceDiscount=0&returnFlight=&JSFormSubmit=off&buyFlight"
+"s.x=40&buyFlights.y=7&.cgifields=saveCC"
